@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            /*這三行為前綴，給其他瀏覽器使用的，所以後面的字是白色。 
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex; */
+
+            background-position: center;
+            background-size: cover;
+            width: 800px;
+            height: 500px;
+        }
+        /* 下方滑動點點的預設類別，在裡面對點點進行變動 */
+        .swiper-pagination-bullet {
+            border: 1px solid black;
+            background: white;
+            opacity:1;
+        }
+        /* 對第二個swiper的點點改變不被選取的顏色，使用後代選擇器選到對應第二個swiper的點點樣式 */
+        /* 需對應下方第二個swiper的class="swiper-pagination green_pagination"，增加不同的類別可做區隔 */
+       .green_pagination .swiper-pagination-bullet {
+            border: 1px solid black;
+            background: green;
+            opacity:1;
+        }
+        /* 更改第二個swiper的預設點點樣式，變動點點樣式會被取代，可相同使用後代選擇器選取，讓權重相同，效果即可產生*/
+        .swiper-container .swiper-pagination-bullet-active{
+            border: 1px solid black;
+            background: red;
+        }
+        
+        .test{
+            position: relative;
+        }
+        .box{
+            width: 100%;
+            height: 500px;
+            z-index: 1;
+            background-color: turquoise;
+            opacity: 0;
+            position: absolute;
+            top: 0%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- banner swiper -->
+    <!-- 因兩組swiper的swiper-container相同，要分開控制則多新增不同名稱的類別，且在js內抓取新增類別，即可達到分開控制的效果 -->
+    <div class="swiper-container banner-swiper">
+        <div class="swiper-wrapper ">
+            <div class="swiper-slide ">
+                <img width=800px height=500px; height=500px src="./bootstrap img/image16-7.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img width=800px height=500px src="./bootstrap img/0.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img width=800px height=500px src="./bootstrap img/maxresdefault.jpg" alt="">
+            </div>
+        </div>
+        <!--swiper-pagination為swiper下方點點的類別，分開兩個swiper相同增加對應的類別，進行分開控制，且新增的類別為更動點點樣式的選取類別  -->
+        <div class="swiper-pagination red_pagination"></div>
+    </div>
+    <!-- content swiper -->
+    
+    <div class="test">
+    <div class="swiper-container contnet-swiper ">
+        <div class="swiper-wrapper " >
+            <div class="swiper-slide ">
+                <img width=800px height=500px src="./bootstrap img/image16-7.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img width=800px height=500px src="./bootstrap img/0.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img width=800px height=500px src="./bootstrap img/maxresdefault.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination green_pagination"></div>
+    </div>
+    <div class="box"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 此為初始化，需要放在導入的cdn下面，不然不能執行 
+         var swiper = new Swiper('.swiper-container');
+    -->
+    <script>
+        // 新增一個變數banner_swiper，將類別banner-swiper丟入，且對.banner-swiper做偵測動作。
+        var banner_swiper = new Swiper('.banner-swiper', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+
+            },
+        }
+        );
+        var contnet_swiper = new Swiper('.contnet-swiper', {
+            //cssMode: true 此為將swiper選定不得滑動，前提是不能有任何效果，否則不能用
+            //或是另一個方法，可放置一個遮罩在此畫面上層，將Z-index調至最高，就不能點到滑動物件。
+            //cssMode: true,
+            effect: 'coverflow',//effect(效果): 'coverflow'(3D視窗呈現效果)
+            grabCursor: true,//滑鼠移到swiper上，會變成手掌形狀
+            centeredSlides: true,//選到的物件會置中
+            slidesPerView: 'auto',//能夠在同一個視窗顯示的物件數量
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,//陰影
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        }
+        );
+        // 偵測banner_swiper在滑動函式
+        banner_swiper.on('slideChange', function () {
+            // activeIndex為被啟動的物件索引值
+            // banner_swiper.activeIndex 抓取banner_swiper被啟動的索引值
+            console.log(banner_swiper.activeIndex);
+            // .slideTo(index[索引值必填], speed[選填], runCallbacks[選填]);當選到對應索引值進行滑動，用於兩個swiper間控制
+            //contnet_swiper.slideTo(banner_swiper.activeIndex);對應banner_swiper的索引值，控制contnet_swiper移動相對應索引值
+            contnet_swiper.slideTo(banner_swiper.activeIndex);
+        });
+    </script>
+</body>
+
+</html>

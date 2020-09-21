@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- AOS使用，需要導入js/css檔。 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        .box{
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        font-size: 64px;
+        color: #00F;
+    }
+    .font{
+        font-family: 'Lobster', cursive;
+        font-weight: 400;
+    }
+    </style>
+    
+</head>
+<body>
+    <!-- data-aos="fade-up" 動畫的效果樣式
+         data-aos-offset="200" 延後觸發的點，可打負數即為提早觸發，正數為延後觸發
+         data-aos-delay="50" 延後顯示的時間
+         data-aos-duration="1000" 動畫移動的時間 數值越小越快結束，數值越大，越慢結束
+         data-aos-easing="ease-in-out" 貝茲曲線
+         data-aos-mirror="true" 
+         data-aos-once="false" 
+         data-aos-anchor-placement="top-center" -->
+    <div class="box" data-aos="fade-up" data-aos-delay="50" 
+     data-aos-anchor-placement="center-center" >
+     <i class="fas fa-car"></i>
+    
+    </div>
+    <div class="font">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos modi placeat corporis id doloribus velit nobis laudantium, voluptas ratione! Molestias voluptatum distinctio quidem veniam. Deserunt eaque reprehenderit distinctio sit quibusdam!Minus repellendus eius quos maiores, dicta qui sed nulla praesentium eveniet nam illum eum ullam quo sunt non excepturi, ex, dolorum repudiandae. Omnis unde hic sapiente, laboriosam soluta quos consectetur.
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS需要先做初始化 -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
