@@ -25,7 +25,7 @@ body {
         .about_title{
             width: 100%;
             height: 35vw;
-            background-image: url("img/分頁-wireframe-Banner-12\ \(2\).png");
+            background-image: url("../img/about_title.png");
             @include img_set();
         }
          @media(max-width: 1024px){
@@ -118,7 +118,7 @@ body {
                             width: 93%;
                             height: 88%;
                             border-radius: 20px;
-                            background-image: url("img/林聰明沙鍋魚頭的由來01.jpg");
+                            background-image: url("../img/林聰明沙鍋魚頭的由來01.jpg");
                             @include img_set();
                         }
                         @media(max-width: 1024px){
@@ -243,7 +243,7 @@ body {
                             width: 95%;
                             height: 90%;
                             border-radius: 20px;
-                            background-image: url("img/林聰明沙鍋魚頭的由來02.jpg");
+                            background-image: url("../img/林聰明沙鍋魚頭的由來02.jpg");
                             @include img_set();
                         }
                     }
@@ -447,7 +447,7 @@ body {
     .street_img{
         width: 100%;
         height: 317px;
-        background-image: url("img/分頁-wireframe-img-17.png");
+        background-image: url("../img/about_street.png");
         @include img_set();
         @include margin_bottom_50;
         @media(max-width: 1024px){
@@ -490,7 +490,7 @@ body {
     .footer_img{
         width: 100%;
         height: 35vw;
-        background-image: url("img/分頁-wireframe-footer-16.png");
+        background-image: url("../img/about_footer.png");
         @include img_set();
     }
 
