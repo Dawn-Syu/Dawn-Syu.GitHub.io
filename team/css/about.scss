@@ -20,7 +20,7 @@ body {
     }
     //////////////////// title圖片////////////////////////
     .title_padding{
-        padding-bottom: 100px;
+        padding-bottom: 150px;
 
         .about_title{
             width: 100%;
@@ -57,7 +57,7 @@ body {
                     padding-bottom: 60px;
                 }
                 @media(max-width: 768px){
-                    padding-bottom: 30px;
+                    padding-bottom: 25px;
                     padding-left: 0;
                 }
                 h1{
@@ -462,7 +462,7 @@ body {
         padding-bottom: 100px;        
     }
     @media(max-width: 768px){
-        padding-bottom: 100px;                  
+        padding-bottom: 150px;                  
     }
     .street_title_text{
         padding-bottom: 94px; 
@@ -572,7 +572,7 @@ body {
                 }
                 @media(max-width: 768px){
                     font-size: 8px;
-                    margin-bottom: 5px;
+                    margin-bottom: 15px;
                 }
             }
         }

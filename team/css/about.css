@@ -23,7 +23,7 @@ body {
 }
 
 .title_padding {
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 }
 
 .title_padding .about_title {
@@ -93,7 +93,7 @@ body {
 
 @media (max-width: 768px) {
   .story_cards .story_title_text {
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     padding-left: 0;
   }
 }
@@ -695,7 +695,7 @@ body {
 
 @media (max-width: 768px) {
   .street {
-    padding-bottom: 100px;
+    padding-bottom: 150px;
   }
 }
 
@@ -904,7 +904,7 @@ body {
 @media (max-width: 768px) {
   .about_footer .flex-container .margin_bottom_50 p {
     font-size: 8px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=about.css.map */
