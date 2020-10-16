@@ -83,8 +83,8 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img class="img_size" src="../img/林聰明愛木頭02.jpg" alt="" />
-                            <div class="content active">
+                            <img class="img_size img_active" src="../img/林聰明愛木頭02.jpg" alt="" />
+                            <div class="content active ">
                                 <h4 class=" text_h4 story_title_text_h4">「加入自己的創意，親身設計參與裝潢重修」</h4>
                                 <h4 class=" text_h4 story_title_text_h4">
                                     成就現今店的契機，於民國94年中正路商店造街活動，翻修路面，數個月的工程，林聰明趁此時，決心改造自己的店鋪，因沒有經驗所以改造時間也比一般工程耗時更久，整修老建築及改造內部是為了打造心中的綠建築。
@@ -188,13 +188,16 @@
             mousewheelControl: true//滑鼠滾輪滑動圖片變換
         });
         var contents = document.querySelectorAll('.content')//將所有content宣告成新的變數
+        var imgs =document.querySelectorAll('.img_size');
 
         //swiper事件寫法一，請查閱swiper API的 Events事件
         wood_swiper.on('slideChange', function () {
             //console.log(wood_swiper.activeIndex);//wood_swiper此為要做事件的swiper名字.(activeIndex為取得目前選擇到的圖片索引值)
             const content = contents[wood_swiper.activeIndex];//將contents的索引值用wood_swiper取得道的索引值，使得兩方可以同時出現或消失。
+            const img = imgs[wood_swiper.activeIndex];
             remove_active()//將content的active先做刪除，才能將不顯示的content隱藏。
             content.classList.add("active")//將被選到的banner的content增加顯示的類別，將資料顯示出來。        
+            img.classList.add("img_active");
         })
         function remove_active() {
             contents.forEach(
@@ -202,7 +205,13 @@
                     content.classList.remove("active");
                 }
             )
+            imgs.forEach(
+                function (img) {
+                    img.classList.remove("img_active");
+                }
+            )
         }
+       
 
 //////////////////////////// 林聰明愛木頭js-swiper程式結束//////////////////////
 
