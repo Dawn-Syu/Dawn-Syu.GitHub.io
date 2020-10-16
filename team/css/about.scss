@@ -1,0 +1,530 @@
+@import"./mixin";
+@import"./guide";
+
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+        position: relative;
+        height: 100%;
+    }   
+    body {
+        margin: 0;
+    }
+    .story_title_text_h4 {
+        padding-top: 10px;
+    }
+    .text_h1_padding {
+        padding: 35px 0 0 0;
+    }
+    //////////////////// title圖片////////////////////////
+    .title_padding{
+        padding-bottom: 100px;
+
+        .about_title{
+            width: 100%;
+            height: 35vw;
+            background-image: url("img/分頁-wireframe-Banner-12\ \(2\).png");
+            @include img_set();
+        }
+         @media(max-width: 1024px){
+            padding-bottom: 65px;
+         }
+         @media(max-width: 768px){
+         padding-bottom: unset;
+         }
+    }
+//////////////////////沙鍋魚頭由來html區塊開始//////////////////
+   
+/////////////////////////////沙鍋魚頭由來卡片區塊開始///////////////////////////
+        .story_cards {
+            @include padding_bottom_50();
+            height: 100%;
+            @media(max-width: 1024px){
+                height: unset;
+            }
+
+            .story_title_text {
+                @include container();
+                @media(max-width: 1024px){
+                    padding-bottom: 60px;
+                }
+                @media(max-width: 768px){
+                    padding-bottom: 38px;
+                }
+                h1{
+                    @include text_h1();
+                    @extend .text_h1_padding;
+                    @media(max-width: 768px){
+                        font-size: 36px;
+                    }
+                }
+
+                .fish_text{
+                    font-size: 24px;
+                    font-family: 微軟正黑體;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+
+                    p{
+                        @include text_h4();
+                        @extend .story_title_text_h4;
+                        @media(max-width: 1024px){
+                            padding-top: 0;  
+                            margin: 0;                        
+                        }
+                    }
+
+                    @media(max-width: 1024px){
+                        flex-direction: column;                    
+                    }
+                    @media(max-width: 768px){
+                        font-size: 21px;
+                   
+                    }
+                }
+            }
+            .card_container{
+                @include card_container();
+
+                .card1{
+                    width: 100%;
+                    height: 42vh;
+                    margin: auto;
+                    display: flex;
+                    /* 內容垂直置中 */
+                    align-items: center;
+                    /* 內容水平置中 */
+                    justify-content: center;
+                    @media(max-width: 1024px){
+                        height: unset;
+                        flex-wrap: wrap;
+                        padding-bottom: 70px;                    
+                    }
+                    @media(max-width: 768px){
+                        padding-bottom: 38px;                    
+                    }
+                    .card1_img{
+                        width: 30%;
+                        height: 80%;
+                        border: 3px solid $gold;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .story1_img{
+                            width: 93%;
+                            height: 88%;
+                            border-radius: 20px;
+                            background-image: url("img/林聰明沙鍋魚頭的由來01.jpg");
+                            @include img_set();
+                        }
+                        @media(max-width: 1024px){
+                            width: 563px;
+                            height: 422px;                    
+                        }
+                        @media(max-width: 768px){
+                            width: 360px;
+                            height: 270px;                    
+                        }
+                    }
+                    .card1_content{
+                        .card1_text{
+                            width: 435px;
+                            font-size: 24px;
+                            font-family: 微軟正黑體;
+                            /*行距 line-height: 250px; */
+                            display: flex;
+                            align-items: center;
+                            margin: 0 50px 30px 60px;
+                            @media(max-width: 1024px){
+                                font-size: 21px;
+                                margin-top: 60px;                   
+                            }
+                            @media(max-width: 768px){
+                                font-size: 18px;
+                                margin-top: 38px;                   
+                            }
+                        }
+                        .circle_border1{
+                            position: relative;
+                            .circle1{
+                                width: 15px;
+                                height: 15px;
+                                background-color: $gold;
+                                border-radius: 30px;
+                                position: absolute;
+                                top: 0%;
+                                right: -1%;
+                            }
+                            .border1{
+                                width: 600px;
+                                height: 10px;
+                                border-bottom: 3px solid $gold;
+                            }
+                            @media(max-width: 1024px){
+                                display: none;                   
+                            }
+                        }
+                    }
+                }
+                .card2{
+                    width: 100%;
+                    height: 42vh;
+                    margin: auto;
+                    display: flex;
+                    /* 內容垂直置中 */
+                    align-items: center;
+                    /* 內容水平置中 */
+                    justify-content: center;
+                    @media(max-width: 1024px){
+                        height: unset;
+                        flex-wrap: wrap;                   
+                    }
+                    .card2main{
+                        .card2_text{
+                            width: 435px;
+                            font-size: 24px;
+                            font-family: 微軟正黑體;
+                            display: flex;
+                            align-items: center;
+                            margin: 0 50px 30px 50px;
+                            @media(max-width: 1024px){
+                                font-size: 21px;                
+                            }
+                            @media(max-width: 768px){
+                                font-size: 18px;              
+                            }
+                        }
+                        .circle_border2{
+                            position: relative;
+                            @media(max-width: 1024px){
+                                display: none;                   
+                            }
+                            .border2{
+                                width: 535px;
+                                height: 10px;
+                                border-bottom: 3px solid $gold;
+                            }
+                            .circle2{
+                                width: 15px;
+                                height: 15px;
+                                background-color: $gold;
+                                border-radius: 30px;
+                                position: absolute;
+                                top: 0%;
+                            }
+                        }
+                    }
+                    .card2_img{
+                        width: 35%;
+                        height: 80%;
+                        background-color: $gold;
+                        border: 3px solid $gold;
+                        border-radius: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        @media(max-width: 1024px){
+                            width: 563px;
+                            height: 422px;
+                            order: -1;    
+                            margin-bottom: 60px;              
+                        }
+                        @media(max-width: 768px){
+                            width: 360px;
+                            height: 270px; 
+                            margin-bottom: 38px;                   
+                        }
+                    
+                        .story2_img {
+                            width: 95%;
+                            height: 90%;
+                            border-radius: 20px;
+                            background-image: url("img/林聰明沙鍋魚頭的由來02.jpg");
+                            @include img_set();
+                        }
+                    }
+                }
+            }
+        }
+/////////////////////////////沙鍋魚頭由來卡片區塊結束///////////////////////////
+/////////////////////////////林聰明愛木頭html區塊開始 /////////////////////////
+
+.wood{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    @media(max-width: 1024px){
+        padding-top: 100px;
+        
+     }
+     @media(max-width: 768px){
+        padding-top: 40px;
+        padding-bottom: 90px;
+     }
+    .story_title_text{
+        @include padding_bottom_50(); 
+        @include container();
+                h1{
+                    @include text_h1();
+                    @extend .text_h1_padding;
+                    @media(max-width: 1024px){
+                        padding-top: 0;
+                        }
+                    @media(max-width: 768px){
+                        font-size: 36px;
+                        padding-top: 0;
+                        }
+                }
+                h4{
+                    @include padding_bottom_50();
+                    @extend .story_title_text_h4;
+                    @include text_h4();
+                    @media(max-width: 1024px){
+                        font-size: 21px;
+                        margin: 0;
+                        padding-top: 0;
+                        padding-bottom: 60px;
+                     }
+                     @media(max-width: 768px){
+                        padding-bottom: 38px;
+                     }
+                }            
+    }
+    .swiper-width {
+        @include padding_bottom_50(); 
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+        text-align: center;
+        .swiper-area{
+            max-width: 1393px;
+            margin: auto;
+            .swiper-container{
+                margin-left: -50%;
+                width: 200%;
+                position: relative;
+
+                .swiper-wrapper{
+                    .swiper-slide{
+                        position: relative;
+                        .img_size{
+                                width: 100%;
+                                height: 480px;
+                                @media(max-width: 1024px){
+                                    height: 320px;
+                                }
+                                @media(max-width: 768px){
+                                    height: 220px;
+                                }
+                            }
+                        .content{
+                            display: none;
+                            &.active {
+                                display: block;
+                            }
+                            h4{
+
+                                @include text_h4();
+                                @extend .story_title_text_h4;
+                                @media(max-width: 1024px){
+                                    &:nth-child(1){
+                                        font-size: 21px;
+                                    }
+                                    font-size: 18px;
+                                }
+                                 
+                            }
+                            
+                            // h4{
+                            //     @include text_h4();
+                            //     @extend .story_title_text_h4;
+                            // }
+                        }
+                        span{
+                            width: 100%;
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            background: white;
+                            font-size: 14px;
+                            padding: 10px; 
+                        }
+                    }
+                }
+                .swiper-button-next{
+                    background-image: none;
+                    top: 35%;
+                    right: 32%;
+                    @media(max-width: 768px){
+                        top: 30%;
+                    }
+                    &::after{
+                        display: none;
+                    }
+                    .fas{
+                        
+                        &.fa-chevron-circle-right{
+                            color: white;
+                            font-size: 50px;
+                            background-color: rgb(34, 32, 32);
+                            border-radius: 70%;
+                            @media(max-width: 1024px){
+                                font-size: 40px;
+                            }
+                            @media(max-width: 768px){
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+                .swiper-button-prev{
+                    background-image: none;
+                    top: 35%;
+                    left: 32%;
+                    @media(max-width: 768px){
+                        top: 30%;
+                    }
+                    &::after{
+                        display: none;
+                    }
+                    .fas{
+
+                        &.fa-chevron-circle-left {
+                            color: white;
+                            font-size: 50px;
+                            background-color: rgb(34, 32, 32);
+                            border-radius: 70%;
+                            @media(max-width: 1024px){
+                                font-size: 40px;
+                            }
+                            @media(max-width: 768px){
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wood_border {
+        width: 160px;
+        margin: auto;
+        border-bottom: 7px solid $gold;
+    }
+}
+/////////////////////////////林聰明愛木頭html區塊結束 /////////////////////////
+/////////////////////////////老街二通情，劃時代的中正路html區塊開始 /////////////////////////
+.street{
+    padding-bottom: 135px;
+    @media(max-width: 1024px){
+        padding-bottom: 100px;        
+    }
+    @media(max-width: 768px){
+        padding-bottom: 30px;                  
+    }
+    .street_title_text{
+        padding-bottom: 94px; 
+
+        @media(max-width: 1024px){
+            padding-bottom: 60px;        
+        }
+        @media(max-width: 768px){
+            padding-bottom: 30px;                  
+        }
+/////////////////////////寫到街道標題間距
+        h1{
+            @extend .text_h1_padding;
+            @include container();
+            @media(max-width: 768px){
+                font-size: 36px;                  
+            }
+        }
+    }
+    .street_img{
+        width: 100%;
+        height: 317px;
+        background-image: url("img/分頁-wireframe-img-17.png");
+        @include img_set();
+        @include margin_bottom_50;
+        @media(max-width: 1024px){
+            height: 378px;
+            margin-bottom:60px;
+        }
+        @media(max-width: 768px){
+            height: 270px;  
+            margin-bottom:38px                
+        }
+    }
+    .street_text{
+        @include padding_bottom_50();
+        @media(max-width: 1024px){
+            padding: 0;
+        }
+        @media(max-width: 768px){
+            padding: 0;               
+        }
+        h4{
+            @include container();
+            @include text_h4();
+
+            &.container_text{
+                text-align: left;
+                @include text_h4();
+            }
+            @media(max-width: 1024px){
+                font-size: 21px;
+            }
+            @media(max-width: 768px){
+                font-size: 18px;
+            }
+        }
+    }
+}
+/////////////////////////////老街二通情，劃時代的中正路html區塊結束 /////////////////////////
+////////////////////////// FOOTER開始 //////////////////////////////
+.about_footer{
+    .footer_img{
+        width: 100%;
+        height: 35vw;
+        background-image: url("img/分頁-wireframe-footer-16.png");
+        @include img_set();
+    }
+
+    .flex-container{
+        /*flex-direction: column;將p段落的文字轉成直的，再置中靠下  */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        
+        .margin_bottom_50{
+            @include margin_bottom_50;
+            @media(max-width: 1024px){
+                margin-bottom: 30px;
+            }
+            @media(max-width: 768px){
+                margin-bottom: 15px;
+            }
+            p{
+                display: flex;
+                justify-content: center;
+                margin: 5px 0;
+                font-size: 16px;
+                font-family: 微軟正黑體;
+                color: $gread4;
+                &.block3{
+                    color: $block3;
+                    font-weight: 1000;
+                }
+                @media(max-width: 768px){
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+////////////////////////// FOOTER結束 //////////////////////////////

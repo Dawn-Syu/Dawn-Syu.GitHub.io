@@ -1,0 +1,796 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.story_title_text_h4, .story_cards .story_title_text .fish_text p, .wood .story_title_text h4, .wood .swiper-width .swiper-area .swiper-container .swiper-wrapper .swiper-slide .content h4 {
+  padding-top: 10px;
+}
+
+.text_h1_padding, .story_cards .story_title_text h1, .wood .story_title_text h1, .street .street_title_text h1 {
+  padding: 35px 0 0 0;
+}
+
+.title_padding {
+  padding-bottom: 100px;
+}
+
+.title_padding .about_title {
+  width: 100%;
+  height: 35vw;
+  background-image: url("img/分頁-wireframe-Banner-12 (2).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1024px) {
+  .title_padding {
+    padding-bottom: 65px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title_padding {
+    padding-bottom: unset;
+  }
+}
+
+.story_cards {
+  padding-bottom: 50px;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .story_cards {
+    height: unset;
+  }
+}
+
+.story_cards .story_title_text {
+  width: 950px;
+  margin: auto;
+  text-align: center;
+  padding: 0 0 0 10px;
+}
+
+@media (max-width: 1024px) {
+  .story_cards .story_title_text {
+    width: 580px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .story_cards .story_title_text {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .story_cards .story_title_text {
+    padding-bottom: 38px;
+  }
+}
+
+.story_cards .story_title_text h1 {
+  font-size: 48px;
+}
+
+@media (max-width: 768px) {
+  .story_cards .story_title_text h1 {
+    font-size: 36px;
+  }
+}
+
+.story_cards .story_title_text .fish_text {
+  font-size: 24px;
+  font-family: 微軟正黑體;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.story_cards .story_title_text .fish_text p {
+  font-size: 22px;
+}
+
+@media (max-width: 1024px) {
+  .story_cards .story_title_text .fish_text p {
+    padding-top: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .story_cards .story_title_text .fish_text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .story_cards .story_title_text .fish_text {
+    font-size: 21px;
+  }
+}
+
+.story_cards .card_container {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .story_cards .card_container {
+    width: 658px;
+  }
+}
+
+.story_cards .card_container .card1 {
+  width: 100%;
+  height: 42vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* 內容垂直置中 */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* 內容水平置中 */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .story_cards .card_container .card1 {
+    height: unset;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .story_cards .card_container .card1 {
+    padding-bottom: 38px;
+  }
+}
+
+.story_cards .card_container .card1 .card1_img {
+  width: 30%;
+  height: 80%;
+  border: 3px solid #E0A23D;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.story_cards .card_container .card1 .card1_img .story1_img {
+  width: 93%;
+  height: 88%;
+  border-radius: 20px;
+  background-image: url("img/林聰明沙鍋魚頭的由來01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1024px) {
+  .story_cards .card_container .card1 .card1_img {
+    width: 563px;
+    height: 422px;
+  }
+}
+
+@media (max-width: 768px) {
+  .story_cards .card_container .card1 .card1_img {
+    width: 360px;
+    height: 270px;
+  }
+}
+
+.story_cards .card_container .card1 .card1_content .card1_text {
+  width: 435px;
+  font-size: 24px;
+  font-family: 微軟正黑體;
+  /*行距 line-height: 250px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 50px 30px 60px;
+}
+
+@media (max-width: 1024px) {
+  .story_cards .card_container .card1 .card1_content .card1_text {
+    font-size: 21px;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .story_cards .card_container .card1 .card1_content .card1_text {
+    font-size: 18px;
+    margin-top: 38px;
+  }
+}
+
+.story_cards .card_container .card1 .card1_content .circle_border1 {
+  position: relative;
+}
+
+.story_cards .card_container .card1 .card1_content .circle_border1 .circle1 {
+  width: 15px;
+  height: 15px;
+  background-color: #E0A23D;
+  border-radius: 30px;
+  position: absolute;
+  top: 0%;
+  right: -1%;
+}
+
+.story_cards .card_container .card1 .card1_content .circle_border1 .border1 {
+  width: 600px;
+  height: 10px;
+  border-bottom: 3px solid #E0A23D;
+}
+
+@media (max-width: 1024px) {
+  .story_cards .card_container .card1 .card1_content .circle_border1 {
+    display: none;
+  }
+}
+
+.story_cards .card_container .card2 {
+  width: 100%;
+  height: 42vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* 內容垂直置中 */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* 內容水平置中 */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .story_cards .card_container .card2 {
+    height: unset;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.story_cards .card_container .card2 .card2main .card2_text {
+  width: 435px;
+  font-size: 24px;
+  font-family: 微軟正黑體;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 50px 30px 50px;
+}
+
+@media (max-width: 1024px) {
+  .story_cards .card_container .card2 .card2main .card2_text {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 768px) {
+  .story_cards .card_container .card2 .card2main .card2_text {
+    font-size: 18px;
+  }
+}
+
+.story_cards .card_container .card2 .card2main .circle_border2 {
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .story_cards .card_container .card2 .card2main .circle_border2 {
+    display: none;
+  }
+}
+
+.story_cards .card_container .card2 .card2main .circle_border2 .border2 {
+  width: 535px;
+  height: 10px;
+  border-bottom: 3px solid #E0A23D;
+}
+
+.story_cards .card_container .card2 .card2main .circle_border2 .circle2 {
+  width: 15px;
+  height: 15px;
+  background-color: #E0A23D;
+  border-radius: 30px;
+  position: absolute;
+  top: 0%;
+}
+
+.story_cards .card_container .card2 .card2_img {
+  width: 35%;
+  height: 80%;
+  background-color: #E0A23D;
+  border: 3px solid #E0A23D;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .story_cards .card_container .card2 .card2_img {
+    width: 563px;
+    height: 422px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .story_cards .card_container .card2 .card2_img {
+    width: 360px;
+    height: 270px;
+    margin-bottom: 38px;
+  }
+}
+
+.story_cards .card_container .card2 .card2_img .story2_img {
+  width: 95%;
+  height: 90%;
+  border-radius: 20px;
+  background-image: url("img/林聰明沙鍋魚頭的由來02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wood {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+@media (max-width: 1024px) {
+  .wood {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wood {
+    padding-top: 40px;
+    padding-bottom: 90px;
+  }
+}
+
+.wood .story_title_text {
+  padding-bottom: 50px;
+  width: 950px;
+  margin: auto;
+  text-align: center;
+  padding: 0 0 0 10px;
+}
+
+@media (max-width: 1024px) {
+  .wood .story_title_text {
+    width: 580px;
+  }
+}
+
+.wood .story_title_text h1 {
+  font-size: 48px;
+}
+
+@media (max-width: 1024px) {
+  .wood .story_title_text h1 {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .wood .story_title_text h1 {
+    font-size: 36px;
+    padding-top: 0;
+  }
+}
+
+.wood .story_title_text h4 {
+  padding-bottom: 50px;
+  font-size: 22px;
+}
+
+@media (max-width: 1024px) {
+  .wood .story_title_text h4 {
+    font-size: 21px;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wood .story_title_text h4 {
+    padding-bottom: 38px;
+  }
+}
+
+.wood .swiper-width {
+  padding-bottom: 50px;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.wood .swiper-width .swiper-area {
+  max-width: 1393px;
+  margin: auto;
+}
+
+.wood .swiper-width .swiper-area .swiper-container {
+  margin-left: -50%;
+  width: 200%;
+  position: relative;
+}
+
+.wood .swiper-width .swiper-area .swiper-container .swiper-wrapper .swiper-slide {
+  position: relative;
+}
+
+.wood .swiper-width .swiper-area .swiper-container .swiper-wrapper .swiper-slide .img_size {
+  width: 100%;
+  height: 480px;
+}
+
+@media (max-width: 1024px) {
+  .wood .swiper-width .swiper-area .swiper-container .swiper-wrapper .swiper-slide .img_size {
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wood .swiper-width .swiper-area .swiper-container .swiper-wrapper .swiper-slide .img_size {
+    height: 220px;
+  }
+}
+
+.wood .swiper-width .swiper-area .swiper-container .swiper-wrapper .swiper-slide .content {
+  display: none;
+}
+
+.wood .swiper-width .swiper-area .swiper-container .swiper-wrapper .swiper-slide .content.active {
+  display: block;
+}
+
+.wood .swiper-width .swiper-area .swiper-container .swiper-wrapper .swiper-slide .content h4 {
+  font-size: 22px;
+}
+
+@media (max-width: 1024px) {
+  .wood .swiper-width .swiper-area .swiper-container .swiper-wrapper .swiper-slide .content h4 {
+    font-size: 18px;
+  }
+  .wood .swiper-width .swiper-area .swiper-container .swiper-wrapper .swiper-slide .content h4:nth-child(1) {
+    font-size: 21px;
+  }
+}
+
+.wood .swiper-width .swiper-area .swiper-container .swiper-wrapper .swiper-slide span {
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: white;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.wood .swiper-width .swiper-area .swiper-container .swiper-button-next {
+  background-image: none;
+  top: 35%;
+  right: 32%;
+}
+
+@media (max-width: 768px) {
+  .wood .swiper-width .swiper-area .swiper-container .swiper-button-next {
+    top: 30%;
+  }
+}
+
+.wood .swiper-width .swiper-area .swiper-container .swiper-button-next::after {
+  display: none;
+}
+
+.wood .swiper-width .swiper-area .swiper-container .swiper-button-next .fas.fa-chevron-circle-right {
+  color: white;
+  font-size: 50px;
+  background-color: #222020;
+  border-radius: 70%;
+}
+
+@media (max-width: 1024px) {
+  .wood .swiper-width .swiper-area .swiper-container .swiper-button-next .fas.fa-chevron-circle-right {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wood .swiper-width .swiper-area .swiper-container .swiper-button-next .fas.fa-chevron-circle-right {
+    font-size: 30px;
+  }
+}
+
+.wood .swiper-width .swiper-area .swiper-container .swiper-button-prev {
+  background-image: none;
+  top: 35%;
+  left: 32%;
+}
+
+@media (max-width: 768px) {
+  .wood .swiper-width .swiper-area .swiper-container .swiper-button-prev {
+    top: 30%;
+  }
+}
+
+.wood .swiper-width .swiper-area .swiper-container .swiper-button-prev::after {
+  display: none;
+}
+
+.wood .swiper-width .swiper-area .swiper-container .swiper-button-prev .fas.fa-chevron-circle-left {
+  color: white;
+  font-size: 50px;
+  background-color: #222020;
+  border-radius: 70%;
+}
+
+@media (max-width: 1024px) {
+  .wood .swiper-width .swiper-area .swiper-container .swiper-button-prev .fas.fa-chevron-circle-left {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wood .swiper-width .swiper-area .swiper-container .swiper-button-prev .fas.fa-chevron-circle-left {
+    font-size: 30px;
+  }
+}
+
+.wood .wood_border {
+  width: 160px;
+  margin: auto;
+  border-bottom: 7px solid #E0A23D;
+}
+
+.street {
+  padding-bottom: 135px;
+}
+
+@media (max-width: 1024px) {
+  .street {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .street {
+    padding-bottom: 30px;
+  }
+}
+
+.street .street_title_text {
+  padding-bottom: 94px;
+}
+
+@media (max-width: 1024px) {
+  .street .street_title_text {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .street .street_title_text {
+    padding-bottom: 30px;
+  }
+}
+
+.street .street_title_text h1 {
+  width: 950px;
+  margin: auto;
+  text-align: center;
+  padding: 0 0 0 10px;
+}
+
+@media (max-width: 1024px) {
+  .street .street_title_text h1 {
+    width: 580px;
+  }
+}
+
+@media (max-width: 768px) {
+  .street .street_title_text h1 {
+    font-size: 36px;
+  }
+}
+
+.street .street_img {
+  width: 100%;
+  height: 317px;
+  background-image: url("img/分頁-wireframe-img-17.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1024px) {
+  .street .street_img {
+    height: 378px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .street .street_img {
+    height: 270px;
+    margin-bottom: 38px;
+  }
+}
+
+.street .street_text {
+  padding-bottom: 50px;
+}
+
+@media (max-width: 1024px) {
+  .street .street_text {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .street .street_text {
+    padding: 0;
+  }
+}
+
+.street .street_text h4 {
+  width: 950px;
+  margin: auto;
+  text-align: center;
+  padding: 0 0 0 10px;
+  font-size: 22px;
+}
+
+@media (max-width: 1024px) {
+  .street .street_text h4 {
+    width: 580px;
+  }
+}
+
+.street .street_text h4.container_text {
+  text-align: left;
+  font-size: 22px;
+}
+
+@media (max-width: 1024px) {
+  .street .street_text h4 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 768px) {
+  .street .street_text h4 {
+    font-size: 18px;
+  }
+}
+
+.about_footer .footer_img {
+  width: 100%;
+  height: 35vw;
+  background-image: url("img/分頁-wireframe-footer-16.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about_footer .flex-container {
+  /*flex-direction: column;將p段落的文字轉成直的，再置中靠下  */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_footer .flex-container .margin_bottom_50 {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1024px) {
+  .about_footer .flex-container .margin_bottom_50 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about_footer .flex-container .margin_bottom_50 {
+    margin-bottom: 15px;
+  }
+}
+
+.about_footer .flex-container .margin_bottom_50 p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px 0;
+  font-size: 16px;
+  font-family: 微軟正黑體;
+  color: #4d4d4d;
+}
+
+.about_footer .flex-container .margin_bottom_50 p.block3 {
+  color: #333333;
+  font-weight: 1000;
+}
+
+@media (max-width: 768px) {
+  .about_footer .flex-container .margin_bottom_50 p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=about.css.map */

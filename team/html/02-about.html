@@ -9,380 +9,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            position: relative;
-            height: 100%;
-        }
-
-        body {
-            margin: 0;
-        }
-
-        .about_title {
-            width: 100%;
-            height: 665px;
-            background-image: url("../img/about_title.png");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-        }
-
-        .container {
-            width: 950px;
-            margin: auto;
-            text-align: center;
-            padding: 0 0 0 10px;
-        }
-
-        .card_container {
-            width: 80%;
-            margin: auto;
-        }
-
-        .text_h1 {
-            font-size: 48px;
-        }
-
-        .text_h1_padding {
-            padding: 35px 0;
-        }
-
-        .text_h4 {
-            font-size: 22px;
-        }
-
-        .title_padding {
-            padding-bottom: 100px;
-        }
-
-        .padding {
-            padding-bottom: 50px;
-        }
-        .margin {
-            margin-bottom: 50px;
-        }
-        .padding_b150 {
-            padding-bottom: 150px;
-        }
-
-        .wood {
-            padding-top: 150px;
-            padding-bottom: 150px;
-        }
-
-        /********************************************* 砂鍋魚頭由來區塊的css開始**************************************** */
-        .story_cards {
-            height: 100vh;
-        }
-
-        .story_title_text {
-
-            padding-bottom: 10px;
-        }
-
-        .story_title_text_h4 {
-            padding-top: 10px;
-        }
-
-        /********************************************* 砂鍋魚頭由來第一區塊卡片的css**************************************** */
-        .card1 {
-            width: 100%;
-            /* max-height: 50vh; */
-            height: 42vh;
-            margin: auto;
-            display: flex;
-            /* 內容垂直置中 */
-            align-items: center;
-            /* 內容水平置中 */
-            justify-content: center;
-
-        }
-
-        .card1_img {
-            width: 30%;
-            /* min-height: 80%; */
-            height: 80%;
-            border: 3px solid #D29940;
-            border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .story1_img {
-            width: 93%;
-            height: 88%;
-            border-radius: 20px;
-            background-image: url("../img/林聰明沙鍋魚頭的由來01.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .card1_text {
-            width: 435px;
-            /* height: 319px; */
-            font-size: 24px;
-            font-family: 微軟正黑體;
-            /*行距 line-height: 250px; */
-            display: flex;
-            align-items: center;
-            margin: 0 50px 30px 60px;
-
-        }
-
-        .circle_border1 {
-            position: relative;
-
-        }
-
-        .border1 {
-            width: 600px;
-            height: 10px;
-            border-bottom: 3px solid #D29940;
-            /* display: flex; */
-            /* align-items: center; */
-
-        }
-
-        .circle1 {
-            width: 15px;
-            height: 15px;
-            background-color: #D29940;
-            border-radius: 30px;
-            position: absolute;
-            top: 0%;
-            right: -1%;
-        }
-
-        /********************************************* 砂鍋魚頭由來第二區塊卡片的css**************************************** */
-        .card2 {
-            width: 100%;
-            height: 42vh;
-            margin: auto;
-            display: flex;
-            /* 內容垂直置中 */
-            align-items: center;
-            /* 內容水平置中 */
-            justify-content: center;
-        }
-
-        .card2_img {
-            width: 35%;
-            height: 80%;
-            background-color: #E0A23D;
-            border: 3px solid #E0A23D;
-            border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .story2_img {
-            width: 95%;
-            height: 90%;
-            border-radius: 20px;
-            background-image: url("../img/林聰明沙鍋魚頭的由來02.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .card2_text {
-            width: 435px;
-            font-size: 24px;
-            font-family: 微軟正黑體;
-            display: flex;
-            align-items: center;
-            margin: 0 50px 30px 50px;
-            /* padding-bottom: 15px; */
-        }
-
-        .circle_border2 {
-            position: relative;
-        }
-
-        .border2 {
-            width: 535px;
-            height: 10px;
-            border-bottom: 3px solid #E0A23D;
-            /* display: flex;
-            align-items: center; */
-        }
-
-        .circle2 {
-            width: 15px;
-            height: 15px;
-            background-color: #E0A23D;
-            border-radius: 30px;
-            position: absolute;
-            top: 0%;
-        }
-
-        /********************************************* 砂鍋魚頭由來區塊的css結束**************************************** */
-        /********************************************* 林聰明愛木頭區塊的css開始**************************************** */
-        body .swiper-width {
-            width: 100%;
-            margin: auto;
-            overflow: hidden;
-            text-align: center;
-        }
-
-        body .swiper-width .swiper-area {
-            max-width: 1393px;
-            margin: auto;
-        }
-
-        body .swiper-width .swiper-area .swiper-container {
-            margin-left: -50%;
-            width: 200%;
-            position: relative;
-        }
-
-        .swiper-button-prev,
-        .swiper-button-next {
-            background-image: none;
-        }
-
-        body .swiper-width .swiper-area .swiper-container .swiper-button-next {
-            top: 35%;
-            right: 32%;
-        }
-
-        body .swiper-width .swiper-area .swiper-container .swiper-button-prev {
-            top: 35%;
-            left: 32%;
-        }
-
-        body .swiper-width .swiper-area .swiper-container .swiper-slide {
-            position: relative;
-        }
-
-        body .swiper-width .swiper-area .swiper-container .swiper-slide span {
-            width: 100%;
-            display: block;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            background: white;
-            font-size: 14px;
-            padding: 10px;
-        }
-
-        body .swiper-width .swiper-area .swiper-container .swiper-slide img {
-            width: 100%;
-        }
-
-        body .swiper-width .swiper-area .swiper-container .swiper-slide img a {
-            display: block;
-        }
-
-        body .swiper-width .swiper-area .swiper-container .swiper-slide img a img {
-            width: 100%;
-        }
-
-        .img_size {
-            width: 820px;
-            height: 480px;
-        }
-
-        .fa-chevron-circle-right,
-        .fa-chevron-circle-left {
-            color: white;
-            font-size: 50px;
-            background-color: rgb(34, 32, 32);
-            border-radius: 70%;
-        }
-
-        .swiper-button-next:after,
-        .swiper-button-prev:after {
-            display: none;
-        }
-
-        .wood_border {
-            width: 160px;
-            margin: auto;
-            border-bottom: 7px solid #E0A23D;
-
-        }
-
-        .content {
-            display: none;
-        }
-
-        .content.active {
-            display: block;
-        }
-
-        /********************************************* 林聰明愛木頭區塊的結束**************************************** */
-
-        /********************************************* 老街二通情，劃時代的中正路的css開始**************************************** */
-        .container_text {
-            width: 950px;
-            margin: auto;
-        }
-        .street_img{
-            width: 100%;
-            height: 317px;
-            background-image: url("../img/about_street.png");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        /********************************************* 老街二通情，劃時代的中正路的css結束**************************************** */
-        /********************************************* FOOTER的css開始**************************************** */
-       
-        .footer_img {
-            width: 100%;
-            height: 542px;
-            background-image: url("../img/about_footer.png");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        p{
-            margin: 5px 0;
-            font-size: 16px;
-            font-family: 微軟正黑體;
-
-        }
-        .flex-container {
-            /*flex-direction: column;將p段落的文字轉成直的，再置中靠下  */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-end;
-        }
-
-        /********************************************* FOOTER的css結束**************************************** */
-    </style>
+        <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
     <main class="title_padding">
         <div class="about_title "></div>
     </main>
-    <main class="fish padding story_cards">
-        <!-------------------------------------- 砂鍋魚頭由來html區塊開始 --------------------------------------->
+<!-------------------------------------- 砂鍋魚頭由來html區塊開始 --------------------------------------->
+    <main class="padding_bottom_50 story_cards">
         <div class="story_title_text">
             <h1 class="container text_h1 text_h1_padding ">林聰明沙鍋魚頭的由來</h1>
-            <h4 class="container text_h4 story_title_text_h4">賣魚頭的由來，起源於林聰明之父 – 林進卿的興趣，釣魚而展現出的一道好料理！</h4>
+            <div class="fish_text">
+                <p class="text_h4 story_title_text_h4 ">賣魚頭的由來，起源於林聰明之父–</p>
+                <p class="text_h4 story_title_text_h4">林進卿的興趣，釣魚而展現出的一道好料理！</p>
+            </div>
         </div>
-        <!-------------------------------------- 砂鍋魚頭由來html第一區塊卡片開始 --------------------------------------->
         <div class=" card_container">
+            <!-------------------------------------- 砂鍋魚頭由來html第一區塊卡片開始 --------------------------------------->
             <div class="card1">
                 <div class="card1_img">
                     <div class="story1_img"></div>
                 </div>
-                <div>
+                <div class="card1_content">
                     <div class="card1_text">
                         民國45年，林聰明的父親在文化路夜市上擺小吃攤養家，平時的興趣是釣魚與跳舞，後人談論到林聰明的父親時，常常誇讚他的釣魚功夫。但是釣到太多的魚，就算分送給親朋好友也都吃不完，索性結合平時自己料理的私房菜，拿到自己經營的小吃攤販售。
                     </div>
@@ -411,22 +60,21 @@
             </div>
             <!-------------------------------------- 砂鍋魚頭由來html第二區塊卡片結束 --------------------------------------->
         </div>
-        <!-------------------------------------- 砂鍋魚頭由來html區塊結束 --------------------------------------->
     </main>
+        <!-------------------------------------- 砂鍋魚頭由來html區塊結束 --------------------------------------->
     <!-------------------------------------- 林聰明愛木頭html區塊開始 --------------------------------------->
-
     <main class="wood ">
-        <div class="story_title_text padding">
-            <h1 class="container text_h1 text_h1_padding">林聰明愛木頭 - 日式建築</h1>
-            <h4 class="container text_h4 story_title_text_h4 padding">
+        <div class="story_title_text padding_bottom_50 container">
+            <h1 class="text_h1 text_h1_padding">林聰明愛木頭 - 日式建築</h1>
+            <h4 class=" text_h4 story_title_text_h4 padding_bottom_50">
                 中正總店鋪為歷史悠久的傳統日式建築（約90年歷史），經林老闆自己巧思改造，注入了更強的生命力，展現出木頭之美，讓顧客彷彿置身於森林裡享受著淡淡的檜木香，品嚐著60年道地的傳統小吃。</h4>
         </div>
-        <div class="swiper-width padding">
+        <div class="swiper-width padding_bottom_50">
             <div class="swiper-area">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img class="img_size" src="../img/林聰明愛木頭01.jpg" alt="" />
+                            <img class="img_size" src="./img/林聰明愛木頭01.jpg" alt="" />
                             <div class="content">
                                 <h4 class=" text_h4 story_title_text_h4">「為何會保有老建築？」</h4>
                                 <h4 class=" text_h4 story_title_text_h4">
@@ -435,7 +83,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img class="img_size" src="../img/林聰明愛木頭02.jpg" alt="" />
+                            <img class="img_size" src="./img/林聰明愛木頭02.jpg" alt="" />
                             <div class="content active">
                                 <h4 class=" text_h4 story_title_text_h4">「加入自己的創意，親身設計參與裝潢重修」</h4>
                                 <h4 class=" text_h4 story_title_text_h4">
@@ -444,7 +92,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img class="img_size" src="../img/林聰明愛木頭03.jpg" alt="" />
+                            <img class="img_size" src="./img/林聰明愛木頭03.jpg" alt="" />
                             <div class="content">
                                 <h4 class=" text_h4 story_title_text_h4">「作自己的設計師」</h4>
                                 <h4 class=" text_h4 story_title_text_h4">
@@ -454,7 +102,7 @@
 
                         </div>
                         <div class="swiper-slide">
-                            <img class="img_size" src="../img/林聰明愛木頭04.jpg" alt="" />
+                            <img class="img_size" src="./img/林聰明愛木頭04.jpg" alt="" />
                             <div class="content">
                                 <h4 class=" text_h4 story_title_text_h4">「自己的喜歡也帶給客人」</h4>
                                 <h4 class=" text_h4 story_title_text_h4">
@@ -477,31 +125,33 @@
     </main>
     <!-------------------------------------- 林聰明愛木頭html區塊結束 --------------------------------------->
     <!-------------------------------------- 老街二通情，劃時代的中正路html區塊 --------------------------------------->
-    <main class="padding_b150">
-        <div class="story_title_text padding">
+    <main class="street padding_b150">
+        <div class="street_title_text ">
             <h1 class="container text_h1 text_h1_padding">老街二通情，劃時代的中正路</h1>
         </div>
         <!------------------------ 中正路圖片開始 ------------------------>
-        <div class="street_img margin"></div>
+        <div class="street_img margin_bottom_50"></div>
 
         <!------------------------ 中正路圖片結束 ------------------------>
-        <div class="story_title_text ">
+        <div class="street_text ">
             <h4 class="container_text text_h4">【起灶處】</h4>
             <h4 class="container text_h4 ">
                 日據時代，中山路習稱大通，即日語大街意思，中正路則稱「二通」。當時二通的振山眼科診所由頗負盛名的劉傳來醫師經營，劉院長是林聰明創業時期的恩人，且知道林聰明的創業困難，加上大女兒剛出生，讓一家人在診所的騎樓下擺設路邊攤，且不收店租達數十年，使林聰明一家人，永遠感恩大德。
             </h4>
         </div>
     </main>
+    <!-------------------------------------- 老街二通情，劃時代的中正路html區塊結束 --------------------------------------->
+    <!-------------------------------------- FOOTER開始 --------------------------------------->
     <footer class="about_footer">
-        <div class="footer_img flex-container text_h4">
-            <p >食安說明 • 法律顧問</p>
-            <p>版權所有•不得轉載 © 2003-2020 The Smartfish Co. Ltd All Rights Reserved</p>
-            <p>網頁設計 吃魚變聰明 團隊</p>
+        <div class="footer_img flex-container  ">
+            <div class="margin_bottom_50">
+                <p>食安說明 • 法律顧問</p>
+                <p>版權所有•不得轉載 © 2003-2020 The Smartfish Co. Ltd All Rights Reserved</p>
+                <p class="block3">網頁設計 吃魚變聰明 團隊</p>
+            </div>
         </div>
     </footer>
-
-    <!-------------------------------------- 老街二通情，劃時代的中正路html區塊結束 --------------------------------------->
-
+    <!-------------------------------------- FOOTER結束 --------------------------------------->
 
     <!-- js jq套件 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -541,7 +191,7 @@
 
         //swiper事件寫法一，請查閱swiper API的 Events事件
         wood_swiper.on('slideChange', function () {
-            console.log(wood_swiper.activeIndex);//wood_swiper此為要做事件的swiper名字.(activeIndex為取得目前選擇到的圖片索引值)
+            //console.log(wood_swiper.activeIndex);//wood_swiper此為要做事件的swiper名字.(activeIndex為取得目前選擇到的圖片索引值)
             const content = contents[wood_swiper.activeIndex];//將contents的索引值用wood_swiper取得道的索引值，使得兩方可以同時出現或消失。
             remove_active()//將content的active先做刪除，才能將不顯示的content隱藏。
             content.classList.add("active")//將被選到的banner的content增加顯示的類別，將資料顯示出來。        

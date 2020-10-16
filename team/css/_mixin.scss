@@ -1,0 +1,43 @@
+@mixin padding_bottom_50 (){
+    padding-bottom: 50px;
+}
+
+@mixin container() {
+    width: 950px;
+    margin: auto;
+    text-align: center;
+    padding: 0 0 0 10px;
+    @media(max-width: 1024px){
+        width: 580px;
+     }
+}
+@mixin card_container() {
+    width: 80%;
+    margin: auto;
+    @media(max-width: 1024px){
+        width: 658px;
+     }
+}
+@mixin text_h1() {
+    font-size: 48px;
+}
+@mixin text_h1_padding() {
+    padding: 35px 0;
+}
+@mixin text_h4() {
+    font-size: 22px;
+}
+@mixin title_padding() {
+    padding-bottom: 100px;
+}
+@mixin margin_bottom_50() {
+    margin-bottom: 50px;
+}
+@mixin padding_b150() {
+    padding-bottom: 150px;
+}
+@mixin img_set {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
