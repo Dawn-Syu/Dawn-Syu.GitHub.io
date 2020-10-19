@@ -10,9 +10,419 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
         <link rel="stylesheet" href="../css/about.css">
+        <style>
+        #nav{
+            width: 390px;
+            height: 100vh;
+            background-color: #023D5F;
+            position: fixed;
+            top:0;
+            color:white;
+            font-size:xx-large;
+
+            display:flex;
+            justify-content: center;
+            z-index: 100;
+        }
+        
+        #navcon{
+            width: 200px;
+            height: 100%;
+            padding: 20px 0px;
+            position: relative;
+        }
+        #navvclose{
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            top:10px;
+            left: -80px;
+            /* display: none; */
+        }
+        #cl1{
+            width: 45px;
+            height: 2px;
+            background-color: #E0A23D;
+            transform: rotate(45deg);
+            position: absolute;
+            top:20px;
+        }
+        #cl2{
+            width: 45px;
+            height: 2px;
+            background-color: #E0A23D;
+            transform: rotate(-45deg);
+            position: absolute;
+            top:20px;
+        }
+        #logo{
+            width: 200px;
+            height: 255px;
+            margin-bottom: 40px;
+            background-image: url('/img/LOGO.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            margin-bottom: 40px;
+        }
+        .but{
+            width: 200px;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #buy_online{
+            margin-bottom: 40px;
+        }
+        #contect{
+            width: 200px;
+            height: 115px;
+            border: 1px solid #E0A23D;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #contectcon{
+            width: 170px;
+            height: 85px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #contectfont{
+            width: 76px;
+            height: 76px;
+            font-size: 38px;
+        }
+        #contectfont1{
+            width: 76px;
+            height: 38px;
+            font-size: 38px;
+            line-height: 38px;
+            margin-bottom: 8px;
+        }
+        #contecticon{
+            width: 80px;
+            height: 80px;
+            background-image: url('/img/wireframe-36.png');
+            background-position: center;
+            background-size: cover;
+        }
+        .in{
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .fontmar{
+            margin-bottom: 20px;
+        }
+        .numfont{
+            font-size: 18px;
+        }
+        #line{
+            width: 200px;
+            height: 1px;
+            background-color: white;
+            margin-bottom: 15px;
+        }
+        .icon{
+            width: 200px;
+            height: 29px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 17px;
+            
+        }
+        .ic{
+            width: 31px;
+            height: 31px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0px 6px;
+        }
+        .ic:nth-child(1){
+            background-image: url('/img/資產\ 1.png');
+        }
+        .ic:nth-child(2){
+            background-image: url('/img/資產\ 2.png');
+        }
+        .ic:nth-child(3){
+            background-image: url('/img/資產\ 3.png');
+        }
+        #minnav{
+            width: 95px;
+            height: 100vh;
+            background-color: rgba(255,255,255,0.6);
+            position: fixed;
+            
+            top:0;
+            z-index: 100;
+
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            transition: 0.5s;
+        }
+        #minnavcon{
+            width: 50px;
+            height: 100vh;
+            padding-top: 40px;
+        }
+        #open{
+            width: 50px;
+            height: 30px;
+            position: relative;
+            margin-bottom: 40px;
+        }
+        .openbar{
+            width: 45px;
+            height: 4px;
+            background-color: #E0A23D;
+        }
+        #op1{
+            position: absolute;
+            top:0%;
+        }
+        #op2{
+            position: absolute;
+            top:50%;
+        }
+        #op3{
+            position: absolute;
+            top:100%;
+        }
+        .minnavline1{
+            width: 100%;
+            height: 1px;
+            background-color: #023D5F;
+            margin-bottom: 40px;
+        }
+        .minnaviconicon{
+            width: 50px;
+            height: 50px;
+            margin-bottom: 40px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* background-color: #023D5F; */
+        }
+        #minnavgobuy{
+            background-image: url('/img/wireframe-37.png');
+        }
+        #minfb{
+            background-image: url('/img/wireframe-38.png');
+            margin-bottom: 30px;
+        }
+        #minig{
+            margin-bottom: 30px;
+            background-image: url('/img/wireframe-39.png');
+        }
+        #minline{
+            background-image: url('/img/wireframe-40.png');
+        }
+        #slidenav{
+            display: none;
+        }
+        #timebut{
+            width: 30px;
+            height: 20px;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 100;
+            display: none;
+        }
+        .fff{
+            left: -10%;
+        }
+        .ttt{
+            left: -50%;
+        }
+        .pad{
+            padding-left: 390px;
+        }
+        .openbar{
+                width: 30px;
+                height: 2px;
+                transform: rotate(0deg);
+            }
+            #op4{
+                position: absolute;
+                width: 0px;
+                height: 2px;
+                top: 50%;
+                left: -10%;
+                transform: rotate(45deg);
+            }
+            #op5{
+                position: absolute;
+                width: 0px;
+                height: 2px;
+                top:50%;
+                left: -10%;
+                transform: rotate(-45deg);
+            }
+            #boxxx{
+                width: 144px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            @media(max-width: 768px){
+            #timebut{
+                display: block;
+            }
+            .but{
+                color: white;
+                font-size: 24px;
+                margin-bottom: 5px;
+                font-weight: 600;
+            }
+            #slidenav{
+            width: 100%;
+            height: calc(100vh - 40px);
+            background-color: #023D5F;
+            display: none;
+            position: fixed;
+            top:40px;
+            z-index: 100;
+            }
+            #navcon11{
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            #navvclose{
+                display: none;
+            }
+            #nav{
+                width: 100%;
+                height: 40px;
+                align-items: center;
+            }
+            #minnav{
+                display: none;
+            }
+            #navlogo{
+                width: 124px;
+                height: 22px;
+                background-image: url('/img/林聰明手機板-11.png');
+                background-position: center;
+                background-size: cover;
+            }
+            #navcon{
+                padding: 0 10px;
+                display: none;
+            }
+            .in1{
+                color: white;
+                margin-bottom: 10px;
+            }
+        }
+        </style>
 </head>
 
 <body>
+    <div id="nav">
+        <div id="navcon">
+            <div id="navvclose">
+                <div id="cl1"></div>
+                <div id="cl2"></div>
+            </div>
+            <a href="/html/index.html">
+                <div id="logo"></div>
+            </a>
+            <div class="but">最新消息</div>
+            <div id="about" class="but">關於我們</div>
+            <div id="buy_online" class="but">宅配流程</div>
+            <div id="contect">
+                <div id="contectcon">
+                    <div id="contectfont">
+                        <div id="contectfont1">立即</div>
+                        <div id="contectfont1">訂購</div>
+                    </div> 
+                    <div id="contecticon"></div>
+                </div>
+            </div>
+            <div class="in">營業時間</div>
+            <div class="in fontmar numfont">12 : 00 - 22 : 00</div>
+            <div class="in">連絡電話</div>
+            <div class="in numfont">05 - 2270661</div>
+            <div class="in fontmar numfont">0977 - 117318</div>
+            <div class="in">訂單傳真</div>
+            <div class="in fontmar numfont">05 - 2280537</div> 
+            <div id="line"></div>
+            <div class="icon">
+                <div class="ic"></div>
+                <div class="ic"></div>
+                <div class="ic"></div>
+            </div>
+        </div>
+        <a href="/html/index.html">
+            <div id="navlogo"></div>
+        </a>
+    </div>
+    <div id="timebut">
+        <div id="op1" class="openbar"></div>
+        <div id="op2" class="openbar"></div>
+        <div id="op3" class="openbar"></div>
+        <div id="op4" class="openbar"></div>
+        <div id="op5" class="openbar"></div>
+    </div>
+    <div id="slidenav">
+        <div id="navcon11">
+            <div id="boxxx">
+                <div class="but">最新消息</div>
+                <div id="about" class="but">關於我們</div>
+                <div id="buy_online" class="but">宅配流程</div>
+                <div id="contect">
+                    <div id="contectcon">
+                        <div id="contectfont">
+                                <div id="contectfont1">立即</div>
+                            <div id="contectfont1">訂購</div>
+                        </div> 
+                        <div id="contecticon"></div>
+                    </div>
+                </div>
+                <div class="in1">營業時間</div>
+                <div class="in1 fontmar numfont">12 : 00 - 22 : 00</div>
+                <div class="in1">連絡電話</div>
+                <div class="in1 numfont">05 - 2270661</div>
+                <div class="in1 fontmar numfont">0977 - 117318</div>
+                <div class="in1">訂單傳真</div>
+                <div class="in1 fontmar numfont">05 - 2280537</div> 
+                <div id="line"></div>
+                <div class="icon">
+                    <div class="ic"></div>
+                    <div class="ic"></div>
+                    <div class="ic"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="minnav" class='fff'>
+        <div id="minnavcon">
+            <div id="open">
+                <div id="op1" class="openbar"></div>
+                <div id="op2" class="openbar"></div>
+                <div id="op3" class="openbar"></div>
+            </div>
+            <div class="minnavline1"></div>
+            <div id="minnavgobuy" class="minnaviconicon"></div>
+            <div class="minnavline1"></div>
+            <div id="minfb" class="minnaviconicon"></div>
+            <div id="minig" class="minnaviconicon"></div>
+            <div id="minline" class="minnaviconicon"></div>
+        </div>
+    </div> 
+<!-- about 開始 -->
     <main class="title_padding">
         <div class="about_title "></div>
     </main>
@@ -157,10 +567,71 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
     <!-- js jq套件結束 -->
 
 
     <script>
+        $(window).scroll(function(){
+            if($(window).width() > 768){
+                console.log($(window).scrollTop());
+                if($(window).scrollTop() >= 1080){
+                    $("#nav").addClass('ttt',1000,1);
+                    $('#minnav').removeClass('fff',1000,1);
+                    $('#navvclose')[0].style.display = "none";
+                }
+                else if($(window).scrollTop() < 1080){
+                    $("#nav").removeClass('ttt',1000,1);
+                    $('#minnav').addClass('fff',1000,1);
+                }
+            }
+        })
+        
+
+        $('#open').click(function(){
+            $("#nav").animate({width : '390px',left:'0%'},1000);
+            $('#minnav').animate({left:'-10%'},1000);
+            $('#sec1').addClass('pad');
+            $('#sec2').addClass('pad');
+            $('#sec3').addClass('pad');
+            $('#sec4').addClass('pad');
+            $('#sec4-1').addClass('pad');
+            $('#sec5').addClass('pad');
+            $('#sec6').addClass('pad');
+            $('#navvclose')[0].style.display = "block";
+        })
+        $('#navvclose').click(function(){
+            $("#nav").animate({left:'-50%'},1000);
+            $('#minnav').animate({left:'0%'},1000);
+            $('#sec1').removeClass('pad');
+            $('#sec2').removeClass('pad');
+            $('#sec3').removeClass('pad');
+            $('#sec4').removeClass('pad');
+            $('#sec4-1').removeClass('pad');
+            $('#sec5').removeClass('pad');
+            $('#sec6').removeClass('pad');
+            $('#navvclose')[0].style.display = "none";
+        })
+
+        $('#timebut1').click(function(){
+            $("#nav").animate({left:'-50%'},1000);
+            $('#minnav').animate({left:'0%'},1000);
+        })
+        var X = 0;
+        $('#timebut').click(function(){
+            $('#slidenav').slideToggle("slow");
+            if(X == 0){
+                $('.openbar').animate({width:'0px'},500)
+                $('#op4').animate({width:'35px',opacity:'1'},500)
+                $('#op5').animate({width:'35px',opacity:'1'},500)
+                X = 1
+            }else{
+                $('#op4').animate({width:'0px',opacity:'0'},500)
+                $('#op5').animate({width:'0px',opacity:'0'},500)
+                $('.openbar').delay(500).animate({width:'30px'},500)
+                X = 0
+            }
+        })
         //////////////////////////// 林聰明愛木頭js-swiper程式開始//////////////////////
         // 新增一個變數wood_swiper，將類別banner-swiper丟入，且對.banner-swiper做偵測動作。
         var wood_swiper = new Swiper('.swiper-container', {

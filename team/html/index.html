@@ -4,570 +4,1932 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>林聰明砂鍋魚頭</title>
+
     <style>
         * {
             box-sizing: border-box;
-        }
-
-        html,
-        body {
-            position: relative;
-            height: 100%;
+            font-family: 'Times New Roman', Times, serif;
         }
 
         body {
             margin: 0;
         }
 
-        .about_title {
+        #nav{
+            width: 390px;
+            height: 100vh;
+            background-color: #023D5F;
+            position: fixed;
+            top:0;
+            color:white;
+            font-size:xx-large;
+
+            display:flex;
+            justify-content: center;
+            z-index: 100;
+        }
+        
+        #navcon{
+            width: 200px;
+            height: 100%;
+            padding: 20px 0px;
+            position: relative;
+        }
+        #navvclose{
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            top:10px;
+            left: -80px;
+            display: none;
+        }
+        #cl1{
+            width: 45px;
+            height: 2px;
+            background-color: #E0A23D;
+            transform: rotate(45deg);
+            position: absolute;
+            top:20px;
+        }
+        #cl2{
+            width: 45px;
+            height: 2px;
+            background-color: #E0A23D;
+            transform: rotate(-45deg);
+            position: absolute;
+            top:20px;
+        }
+        #logo{
+            width: 200px;
+            height: 255px;
+            margin-bottom: 40px;
+            background-image: url('/img/LOGO.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            margin-bottom: 40px;
+        }
+        .but{
+            width: 200px;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #buy_online{
+            margin-bottom: 40px;
+        }
+        #contect{
+            width: 200px;
+            height: 115px;
+            border: 1px solid #E0A23D;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #contectcon{
+            width: 170px;
+            height: 85px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #contectfont{
+            width: 76px;
+            height: 76px;
+            font-size: 38px;
+        }
+        #contectfont1{
+            width: 76px;
+            height: 38px;
+            font-size: 38px;
+            line-height: 38px;
+            margin-bottom: 8px;
+        }
+        #contecticon{
+            width: 80px;
+            height: 80px;
+            background-image: url('/img/wireframe-36.png');
+            background-position: center;
+            background-size: cover;
+        }
+        .in{
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .fontmar{
+            margin-bottom: 20px;
+        }
+        .numfont{
+            font-size: 18px;
+        }
+        #line{
+            width: 200px;
+            height: 1px;
+            background-color: white;
+            margin-bottom: 15px;
+        }
+        .icon{
+            width: 200px;
+            height: 29px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 17px;
+            
+        }
+        .ic{
+            width: 31px;
+            height: 31px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0px 6px;
+        }
+        .ic:nth-child(1){
+            background-image: url('/img/資產\ 1.png');
+        }
+        .ic:nth-child(2){
+            background-image: url('/img/資產\ 2.png');
+        }
+        .ic:nth-child(3){
+            background-image: url('/img/資產\ 3.png');
+        }
+        #minnav{
+            width: 95px;
+            height: 100vh;
+            background-color: rgba(255,255,255,0.6);
+            position: fixed;
+            
+            top:0;
+            z-index: 100;
+
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            transition: 0.5s;
+        }
+        #minnavcon{
+            width: 50px;
+            height: 100vh;
+            padding-top: 40px;
+        }
+        #open{
+            width: 50px;
+            height: 30px;
+            position: relative;
+            margin-bottom: 40px;
+        }
+        .openbar{
+            width: 45px;
+            height: 4px;
+            background-color: #E0A23D;
+        }
+        #op1{
+            position: absolute;
+            top:0%;
+        }
+        #op2{
+            position: absolute;
+            top:50%;
+        }
+        #op3{
+            position: absolute;
+            top:100%;
+        }
+        .minnavline1{
             width: 100%;
-            height: 665px;
-            background-image: url("../img/about_title.png");
+            height: 1px;
+            background-color: #023D5F;
+            margin-bottom: 40px;
+        }
+        .minnaviconicon{
+            width: 50px;
+            height: 50px;
+            margin-bottom: 40px;
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
-
+            /* background-color: #023D5F; */
         }
-
-        .container {
-            width: 950px;
-            margin: auto;
-            text-align: center;
-            padding: 0 0 0 10px;
+        #minnavgobuy{
+            background-image: url('/img/wireframe-37.png');
         }
-
-        .card_container {
-            width: 80%;
-            margin: auto;
+        #minfb{
+            background-image: url('/img/wireframe-38.png');
+            margin-bottom: 30px;
         }
-
-        .text_h1 {
+        #minig{
+            margin-bottom: 30px;
+            background-image: url('/img/wireframe-39.png');
+        }
+        #minline{
+            background-image: url('/img/wireframe-40.png');
+        }
+        #home{
+            width: 100%;
+            height: 100vh;
+            transform: scaleY(-1);
+            background-image: url('/img/home.jpg');
+            background-size: 85%;
+            background-position:right;
+            background-repeat: no-repeat;
+            
+        }
+        .container{
+            width: 1140px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 80px 0px;
+        }
+        #sec1{
+            width: 100%;
+            background-color: #FFECD7;
+            display: flex;
+            justify-content: center;
+        }
+        #s1t{
+            width: 100%;
             font-size: 48px;
-        }
-
-        .text_h1_padding {
-            padding: 35px 0;
-        }
-
-        .text_h4 {
-            font-size: 22px;
-        }
-
-        .title_padding {
-            padding-bottom: 100px;
-        }
-
-        .padding {
-            padding-bottom: 50px;
-        }
-        .margin {
+            font-weight: 900;
+            text-align: center;
+            color: #023D5F;
             margin-bottom: 50px;
         }
-        .padding_b150 {
-            padding-bottom: 150px;
-        }
-
-        .wood {
-            padding-top: 150px;
-            padding-bottom: 150px;
-        }
-
-        /********************************************* 砂鍋魚頭由來區塊的css開始**************************************** */
-        .story_cards {
-            height: 100vh;
-        }
-
-        .story_title_text {
-
-            padding-bottom: 10px;
-        }
-
-        .story_title_text_h4 {
-            padding-top: 10px;
-        }
-
-        /********************************************* 砂鍋魚頭由來第一區塊卡片的css**************************************** */
-        .card1 {
+        #s1fon{
             width: 100%;
-            /* max-height: 50vh; */
-            height: 42vh;
-            margin: auto;
-            display: flex;
-            /* 內容垂直置中 */
-            align-items: center;
-            /* 內容水平置中 */
-            justify-content: center;
-
-        }
-
-        .card1_img {
-            width: 30%;
-            /* min-height: 80%; */
-            height: 80%;
-            border: 3px solid #D29940;
-            border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .story1_img {
-            width: 93%;
-            height: 88%;
-            border-radius: 20px;
-            background-image: url("../img/林聰明沙鍋魚頭的由來01.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .card1_text {
-            width: 435px;
-            /* height: 319px; */
+            height: 24px;
             font-size: 24px;
-            font-family: 微軟正黑體;
-            /*行距 line-height: 250px; */
-            display: flex;
-            align-items: center;
-            margin: 0 50px 30px 60px;
-
+            font-weight: 600;
+            color: #023D5F;
+            margin-bottom:40px ;
+            cursor: pointer;
         }
-
-        .circle_border1 {
-            position: relative;
-
+        #fontblock1{
+            display: none;
         }
-
-        .border1 {
-            width: 600px;
-            height: 10px;
-            border-bottom: 3px solid #D29940;
-            /* display: flex; */
-            /* align-items: center; */
-
-        }
-
-        .circle1 {
-            width: 15px;
-            height: 15px;
-            background-color: #D29940;
-            border-radius: 30px;
-            position: absolute;
-            top: 0%;
-            right: -1%;
-        }
-
-        /********************************************* 砂鍋魚頭由來第二區塊卡片的css**************************************** */
-        .card2 {
-            width: 100%;
-            height: 42vh;
-            margin: auto;
-            display: flex;
-            /* 內容垂直置中 */
-            align-items: center;
-            /* 內容水平置中 */
-            justify-content: center;
-        }
-
-        .card2_img {
-            width: 35%;
-            height: 80%;
-            background-color: #E0A23D;
-            border: 3px solid #E0A23D;
-            border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .story2_img {
-            width: 95%;
-            height: 90%;
-            border-radius: 20px;
-            background-image: url("../img/林聰明沙鍋魚頭的由來02.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .card2_text {
-            width: 435px;
+        #s1fontend{
             font-size: 24px;
-            font-family: 微軟正黑體;
-            display: flex;
-            align-items: center;
-            margin: 0 50px 30px 50px;
-            /* padding-bottom: 15px; */
+            font-weight: 600;
+            color: #023D5F;
+            margin-bottom:50px ;
+            cursor: pointer;
         }
-
-        .circle_border2 {
-            position: relative;
-        }
-
-        .border2 {
-            width: 535px;
-            height: 10px;
-            border-bottom: 3px solid #E0A23D;
-            /* display: flex;
-            align-items: center; */
-        }
-
-        .circle2 {
-            width: 15px;
-            height: 15px;
+        #s1more{
+            height: 35px;
+            width: 135px;
             background-color: #E0A23D;
-            border-radius: 30px;
-            position: absolute;
-            top: 0%;
-        }
-
-        /********************************************* 砂鍋魚頭由來區塊的css結束**************************************** */
-        /********************************************* 林聰明愛木頭區塊的css開始**************************************** */
-        body .swiper-width {
-            width: 100%;
-            margin: auto;
-            overflow: hidden;
+            border-radius: 35px;
             text-align: center;
-        }
-
-        body .swiper-width .swiper-area {
-            max-width: 1393px;
-            margin: auto;
-        }
-
-        body .swiper-width .swiper-area .swiper-container {
-            margin-left: -50%;
-            width: 200%;
-            position: relative;
-        }
-
-        .swiper-button-prev,
-        .swiper-button-next {
-            background-image: none;
-        }
-
-        body .swiper-width .swiper-area .swiper-container .swiper-button-next {
-            top: 35%;
-            right: 32%;
-        }
-
-        body .swiper-width .swiper-area .swiper-container .swiper-button-prev {
-            top: 35%;
-            left: 32%;
-        }
-
-        body .swiper-width .swiper-area .swiper-container .swiper-slide {
-            position: relative;
-        }
-
-        body .swiper-width .swiper-area .swiper-container .swiper-slide span {
-            width: 100%;
-            display: block;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            background: white;
-            font-size: 14px;
-            padding: 10px;
-        }
-
-        body .swiper-width .swiper-area .swiper-container .swiper-slide img {
-            width: 100%;
-        }
-
-        body .swiper-width .swiper-area .swiper-container .swiper-slide img a {
-            display: block;
-        }
-
-        body .swiper-width .swiper-area .swiper-container .swiper-slide img a img {
-            width: 100%;
-        }
-
-        .img_size {
-            width: 820px;
-            height: 480px;
-        }
-
-        .fa-chevron-circle-right,
-        .fa-chevron-circle-left {
+            line-height: 35px;
+            font-weight: 900;
             color: white;
-            font-size: 50px;
-            background-color: rgb(34, 32, 32);
-            border-radius: 70%;
+            cursor: pointer;
         }
-
-        .swiper-button-next:after,
-        .swiper-button-prev:after {
-            display: none;
-        }
-
-        .wood_border {
-            width: 160px;
-            margin: auto;
-            border-bottom: 7px solid #E0A23D;
-
-        }
-
-        .content {
-            display: none;
-        }
-
-        .content.active {
-            display: block;
-        }
-
-        /********************************************* 林聰明愛木頭區塊的結束**************************************** */
-
-        /********************************************* 老街二通情，劃時代的中正路的css開始**************************************** */
-        .container_text {
-            width: 950px;
-            margin: auto;
-        }
-        .street_img{
+        #s1foot{
             width: 100%;
-            height: 317px;
-            background-image: url("../img/about_street.png");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        /********************************************* 老街二通情，劃時代的中正路的css結束**************************************** */
-        /********************************************* FOOTER的css開始**************************************** */
-       
-        .footer_img {
-            width: 100%;
-            height: 542px;
-            background-image: url("../img/about_footer.png");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        p{
-            margin: 5px 0;
-            font-size: 16px;
-            font-family: 微軟正黑體;
-
-        }
-        .flex-container {
-            /*flex-direction: column;將p段落的文字轉成直的，再置中靠下  */
+            height: 35px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
+        }
+        #sec2{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        #sec2 .container{
+            padding: 100px 0px;
+            flex-wrap: wrap;
+        }
+        #s2t{
+            width: 100%;
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 80px;
+            color: #023D5F;
+            font-weight: 600;
+        }
+        #s2vid{
+            width: 100%;
+            height: 650px;
+            background-color: gray;
+            margin-bottom: 80px;
+        }
+        #s2font{
+            width: 100%;
+            font-size: 24px;
+            font-weight: 600;
+            color:#023D5F;
+            line-height: 30px;
+            margin-bottom: 80px;
+        }
+        #s2more{
+            height: 35px;
+            width: 135px;
+            background-color: #E0A23D;
+            border-radius: 35px;
+            text-align: center;
+            line-height: 35px;
+            font-weight: 900;
+            color: white;
+            cursor: pointer;
+        }
+        #s2foot2{
+            width: 100%;
+            height: 495px;
+            background-image: url('/img/wireframe-06.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: none;
+        }
+        #s2foot{
+            width: 100%;
+            height: 495px;
+            background-image: url('/img/wireframe-06.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #sec3{
+            width: 100%;
+            height: 100vh;
+            display: flex;
             justify-content: flex-end;
         }
 
-        /********************************************* FOOTER的css結束**************************************** */
-/* 假連結about */
-        .about{
-            width: 100px;
-            height: 100px;
-            background-color: blue;
-            color: white;
-            font-size: 24px;
+        .wrapper {
+            width: 100%;
+            height: 100vh;
+            display: flex;
         }
+
+        .box {
+            width: 25%;
+            height: 100vh;
+            transition: 0.5s;
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            position: relative;
+        }
+
+        .box:nth-child(1) {
+            background-color: cadetblue;
+            background-image: url("/img/Q47A6131\(01\)-.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .box:nth-child(2) {
+            background-color: cadetblue;
+            background-image: url("/img/Q47A6135\(01\)-.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .box:nth-child(3) {
+            background-color: cadetblue;
+            background-image: url("/img/Q47A6147\(01\)-.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .box:nth-child(4) {
+            background-color: cadetblue;
+            background-image: url("/img/Q47A6159\(01\)-.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #sec3img1{
+            width: 232px;
+            height: 256px;
+            background-image: url('/img/沙鍋魚頭.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top:22px;
+            right: 32px;
+        }
+        #sec3img2{
+            width: 110px;
+            height: 406px;
+            background-image: url('/img/火雞肉飯.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top:22px;
+            left: 25px;
+        }
+        #sec3img3{
+            width: 255px;
+            height: 358px;
+            background-image: url('/img/冬菜蝦仁蛋.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top:22px;
+            left:22px;
+        }
+        #sec3img4{
+            width: 244px;
+            height: 287px;
+            background-image: url('/img/健康涼菜.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top:22px;
+            left: calc(50% - 122px);
+        }
+        #sec3img11{
+            width: 232px;
+            height: 256px;
+            background-image: url('/img/沙鍋魚頭.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top:-256px;
+            left: calc(50% - 166px);
+            opacity: 0;
+        }
+        #sec3img22{
+            width: 110px;
+            height: 406px;
+            background-image: url('/img/火雞肉飯.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top:-406px;
+            left: calc(50% - 55px);
+            opacity: 0;
+        }
+        #sec3img33{
+            width: 255px;
+            height: 358px;
+            background-image: url('/img/冬菜蝦仁蛋.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top:-358px;
+            left: calc(50% - 177px);
+            opacity: 0;
+        }
+        #sec3img44{
+            width: 244px;
+            height: 287px;
+            background-image: url('/img/健康涼菜.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top:-287px;
+            left: calc(50% - 122px);
+            opacity: 0;
+        }
+
+        .box:hover {
+            width: 80%;
+        }
+        .box:hover .imgon{
+            opacity: 0;
+            transition-duration: 1s;
+        }
+        .box:hover .tribox{
+            opacity: 1;
+            transition-duration: 1s;
+        }
+
+        .imgbox{
+            width: 100%;
+            height: 0%;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top:100%;
+        }
+
+        .tribox{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            bottom: 70px;
+            left: calc(50% - 40px);
+            cursor: pointer;
+            z-index: 3;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('/img/wireframe-24.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            
+        }
+        
+        .closebox{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            bottom: 70px;
+            left: calc(50% - 40px);
+          
+            background-image: url('/img/wireframe-23.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0;
+        }
+        #sec4{
+            width: 100%;
+            height: 550px;
+            background-color:#FFECD7;
+            display: flex;
+            justify-content: center;
+        }
+        #sec4 .container{
+            height: 100%;
+            width: 1175px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        #sec4t{
+            width: 100%;
+            text-align: center;
+            font-size: 48px;
+            color: #023D5F;
+            margin-bottom: 50px;
+        }
+        #three{
+            width: 1175px;
+            height: 135px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        .step{
+            width: 290px;
+            height: 135px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .step:nth-child(1){
+            background-image: url('/img/wireframe-20.png');
+        }
+        .step:nth-child(2){
+            background-image: url('/img/wireframe-21.png');
+            margin:0% 153px ;
+        }
+        .step:nth-child(3){
+            background-image: url('/img/wireframe-22.png');
+        }
+        #sec4buy{
+            width: 250px;
+            height: 70px;
+            background-image: url('/img/wireframe-25.png');
+            background-size: cover;
+            border-radius: 70px;
+            cursor: pointer;
+        }
+        #sec4buy2{
+            background-image: url('/img/wireframe-25.png');
+            background-size: cover;
+            border-radius: 70px;
+            display: none;
+            width: 163px;
+            height: 47px;
+            cursor: pointer;
+        }
+        #s4bf{
+            text-align: center;
+            line-height: 70px;
+            color:white;
+            font-size: 50px;
+            font-weight: 600;
+        }
+        #sec4-1{
+            width: 100%;
+            height: 790px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .container{
+            height: 100%;
+            width: 1172px;
+            padding-top: 100px;
+        }
+        #sec4-1t{
+            width: 100%;
+            height: 48px;
+            font-size: 48px;
+            font-weight: 600;
+            color:#023D5F;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        
+        #sec5{
+            width: 100%;
+            height: 730px;
+            background-color: #7FB7D3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #sec5 .container{
+            height: 495px;
+            width: 1440px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px;
+        }
+        .sec5box{
+            width: 685px;
+            height: 495px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .sec5pic{
+            width: 290px;
+            height: 445px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .sec5pic{
+            background-image: url('/img/wireframe-26.jpg');
+        }
+        #sec5pic{
+            background-image: url('/img/wireframe-27.jpg');
+        }
+        .sec5map{
+            width: 395px;
+            height: 445px;
+        }
+        .sec5map1{
+            display: none;
+        }
+        .sec5font{
+            width: 685px;
+            height: 50px;
+            background-color: #023D5F;
+            font-size: 24px;
+            line-height: 50px;
+            letter-spacing: 6px;
+            text-align: center;
+            color: white;
+        }
+        #sec6{
+            width: 100%;
+            height: 1460px;
+            background-color: #023D5F;
+            display: flex;
+            justify-content: center;
+        }
+        .container6{
+            width: 1260px;
+            padding-top: 100px;
+        }
+        #sec6t{
+            width: 100%;
+            height: 48px;
+            font-size: 48px;
+            color:white;
+            margin-bottom: 50px;
+            text-align: center;
+            font-weight: 600;
+        }
+        #sec6box1{
+            width: 1260px;
+            height: 540px;
+            border-radius: 10px;
+            border: 1px solid white;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 100px;
+        }
+        .sec6b1b{
+            width: 570px;
+            height: 100%;
+            color:white;
+            padding-top: 45px;
+        }
+        #sec6b1b1{
+                display: none;
+            }
+        #sec6b1R{
+            background-image: url('/img/wireframe-32.png');
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #sec6b1R1{
+            background-image: url('/img/wireframe-32.png');
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: none;
+        }
+        .sec6b1t{
+            width: 100%;
+            height: 36px;
+            font-size: 36px;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .sec6b1font{
+            width: 100%;
+            height: 24px;
+            font-size: 24px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        #sec6b1font1{
+            font-size: 21px;
+        }
+        #sec6b1fl{
+            margin-bottom: 20px;
+        }
+        .sec6b1fl{
+            width: 100%;
+            height: 14px;
+            font-size: 14px;
+            color: rgb(201, 197, 197);
+            margin-bottom: 45px;
+        }
+        #sec6b2bbb{
+            display: none;
+        }
+        #sec6b2{
+            width: 100%;
+            height: 130px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 230px;
+        }
+        #sec6b2box{
+            width: 1140px;
+            height: 130px;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #sec6b2b{
+            width: 1100px;
+            height: 90px;
+            display: flex;
+        }
+        .sec6b2line{
+            width: 1px;
+            height: 100%;
+            margin: 0px 52px;
+            background-color: white;
+        }
+        #sec6b2b1{
+            width: 410px;
+            height: 100%;
+        }
+        
+        #sec6b2b2{
+            text-align: center;
+            height: 100%;
+        }
+        #sec6b2b3{
+            height: 100%;
+        }
+        .sec6b2b1{
+            width: 100%;
+            height: 36px;
+            font-size: 36px;
+            color: white;
+        }
+        #sec6b2b11{
+            margin-bottom: 30px ;
+        }
+        .sec6b2b2{
+            width: 100%;
+            height: 24px;
+            font-size: 24px;
+            color: rgb(201, 197, 197);
+            margin-top: 3px;
+            text-align:unset ;
+            letter-spacing: 1px;
+        }
+        .sec6b2b3{
+            width: 100%;
+            height: 24px;
+            font-size: 24px;
+            color: rgb(201, 197, 197);
+            margin-top: 6px;
+            letter-spacing: 3px;
+        }
+        #sec6box3{
+            width: 1260px;
+            height: 109px;
+            display: flex;
+            justify-content: center;
+        }
+        .fb1{
+            width: 922px;
+            height: 100%;
+        }
+        .fb1f1{
+            width: 100%;
+            height: 24px;
+            font-size: 24px;
+            color:white;
+            font-weight: 600;
+        }
+        .fb1f2{
+            width: 100%;
+            height: 21px;
+            font-size: 21px;
+            color:white;
+            text-align: end;
+            font-weight: 600;
+            margin: 20px 0px;
+        }
+        .fb2{
+            width: 218px;
+            height: 100%;
+            display: flex;
+            justify-content:flex-end;
+        }
+        .ficon{
+            width: 48px;
+            height: 48px;
+            padding-top: 100px;
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .ficon:nth-child(2){
+            margin: 0px 12px;
+        }
+        #ficon1{
+            background-image: url('/img/資產\ 1.png');
+        }
+        #ficon2{
+            background-image: url('/img/資產\ 2.png');
+        }
+        #ficon3{
+            background-image: url('/img/資產\ 3.png');
+        }
+        .pa{
+            width: 100%;
+            height: 500px;
+            background-image: url('/img/wireframe-7-1.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #timebut{
+            width: 30px;
+            height: 20px;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 100;
+            display: none;
+        }
+        #slidenav{
+            display: none;
+        }
+        .yyy{
+            display: none;
+        }
+        @media(max-width: 768px){
+            #timebut{
+                display: block;
+            }
+            #slidenav{
+            width: 100%;
+            height: calc(100vh - 40px);
+            background-color: #023D5F;
+            display: none;
+            position: fixed;
+            top:40px;
+            z-index: 100;
+            }
+            #navcon11{
+                text-align: center;
+                width: 768px;
+                height: 100%;
+                
+                display: flex;
+                justify-content: center;
+            }
+            #navvclose{
+                display: none;
+            }
+            #boxxx{
+                width: 144px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .but{
+                color: white;
+                font-size: 24px;
+                margin-bottom: 5px;
+                font-weight: 600;
+            }
+            #buy_online{
+                margin-bottom: 20px;
+            }
+            #contect{
+                width: 144px;
+                height: 90px;
+                margin-bottom: 20px;
+            }
+            #contectcon{
+                width: 124px;
+                height: 70px;
+            }
+            #contectfont1{
+                width: 58px;
+                height: 26px;
+                font-size: 26px;
+                font-weight: 600;
+            }
+            #contecticon{
+                width: 64px;
+                height: 64px;
+                border-radius: 5px;
+            }
+            .in1{
+                color: white;
+                margin-bottom: 10px;
+            }
+            #line{
+                margin-bottom: 15px;
+            }
+            #nav{
+                width: 100%;
+                height: 40px;
+                align-items: center;
+            }
+            #minnav{
+                display: none;
+            }
+            #navlogo{
+                width: 124px;
+                height: 22px;
+                background-image: url('/img/林聰明手機板-11.png');
+                background-position: center;
+                background-size: cover;
+            }
+            #navcon{
+                padding: 0 10px;
+                display: none;
+            }
+            #home{
+                background-position: 30%;
+                background-size: cover;
+            }
+            #sec1{
+                width: 100%;
+                height: 447px;
+            }
+            #sec1 .container{
+                width: 232px;
+                height: 100%;
+                padding:50px 0px;
+                /* background-color: brown; */
+            }
+            #fontblock{
+                display: none;
+            }
+            #fontblock1{
+            display: block;
+            }
+            #s1t{
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            #s1fon1{
+                margin-bottom: 10px;
+                font-size: 14px;
+                color: #023D5F;
+            }
+            #s1fon2{
+                padding-left:8px ;
+                margin-bottom: 20px;
+                font-size: 14px;
+                color: #023D5F;
+            }
+            #s1fontend1{
+                padding-left:8px ;
+                color: #023D5F;
+                font-size: 14px;
+                margin-bottom: 25px;
+            }
+            #s1more{
+                width: 100px;
+                height: 26px;
+                line-height: 26px;
+            }
+            #sec2{
+                width: 100%;
+                height: 588px;
+
+            }
+            #sec2 .container{
+                width: 100%;
+                height: 488px;
+                padding-top: 40px;
+            }
+            #s2t{
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            #s2vid{
+                width: 320px;
+                height: 180px;
+                margin-bottom: 20px;
+            }
+            #s2font{
+                
+                font-size: 14px;
+                line-height: 18px;
+                margin-bottom: 40px;
+                padding-left: 5px;
+            }
+            #s2more{
+                width: 100px;
+                height: 26px;
+                line-height: 26px;
+
+            }
+            #s2foot2{
+                display: block;
+                background-position: bottom;
+                width: 768px;
+                height: 175px;
+            }
+            #sec3{
+                width: 100%;
+                height: 848px;
+            }
+            .wrapper{
+                /* padding: 20px 0; */
+                height: 848px;
+                flex-wrap: wrap;
+            }
+            .box{
+                width: 100%;
+                height: 212px;
+            }
+            .box:nth-child(1){
+                background-image: url('/img/Q47A6131\(02\).jpg');
+                transform: scaleY(-1);
+            }
+            .box:nth-child(2){
+                background-image: url('/img/Q47A6135\(02\).jpg');
+                transform: scaleY(-1);
+            }
+            .box:nth-child(3){
+                background-image: url('/img/Q47A6147\(02\).jpg');
+                transform: scaleY(-1);
+            }
+            .box:nth-child(4){
+                background-image: url('/img/Q47A6159\(02\).jpg');
+                transform: scaleY(-1);
+            }
+            
+            #sec3img1{
+                width: 87px;
+                height: 96px;
+                transform: scaleY(-1);
+                bottom: 33px;
+                left: 7px;
+            }
+            #sec3img2{
+                width:35px;
+                height: 130px;
+                transform: scaleY(-1);
+                top:42px;
+                left: 13px;
+            }
+            #sec3img3{
+                width: 87px;
+                height: 122px;
+                transform: scaleY(-1);
+                top:52px;
+                left: 9px;
+            }
+            #sec3img4{
+                width: 90px;
+                height: 108px;
+                transform: scaleY(-1);
+                top:63px;
+                left: 9px;
+            }
+            .tribox{
+                width: 18px;
+                height: 18px;
+                top: 8px;
+                left: calc(50% - 9px);
+                opacity: 1;
+                transform: scaleY(-1);
+                background-image: url('/img/林聰明手機板-13.png');
+            }
+            .imgbox{
+                display: none;
+                /* transform: scaleY(-1); */
+            }
+            #sec4{
+                height: 568px;
+                
+            }
+            #sec4t{
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 0px;
+            }
+            #sec4 .container{
+                width: 320px;
+                height: 100%;
+                padding: 40px 0px;
+            }
+            
+            #three{
+                width: 320px;
+                height: 310px;
+                flex-wrap: wrap;
+                margin-top:0px ;
+                margin-bottom: 77px;
+            }
+            .step{
+                width: 188px;
+                height: 90px;
+                background-size: 100%;
+            }
+            .step:nth-child(2){
+                margin: 20px 0px;
+            }
+            #sec4buy{
+                display: none;
+            }
+            #sec4buy2{
+                display: block;
+                width: 163px;
+                height: 47px;
+                cursor: pointer;
+                margin-top: 45px;
+            }
+            #sec5{
+                height: 450px;
+            }
+            #sec5 .container{
+                width: 320px;
+                height: 450px;
+                justify-content: center;
+                align-items: unset;
+                flex-wrap: wrap;
+                padding: 50px 0px;
+            }
+            .sec5box{
+                width: 234px;
+                height: 170px;
+                position: relative;
+                margin-bottom: 11px;
+            }
+            .sec5pic{
+                width: 100px;
+                height: 152px;
+            }
+            .sec5map{
+                display: none;
+            }
+            .sec5map1{
+                display: block;
+            }
+            .sec5font{
+                width: 234px;
+                height: 17px;
+                font-size: 12px;
+                line-height: 17px;
+                letter-spacing: 3px;
+                position: absolute;
+                bottom: 1px;
+                /* display: none; */
+            }
+            #sec6{
+                height: 1600px;
+            }
+            .container6{
+                width: 320px;
+                padding: 40px 15px;
+            }
+            #sec6t{
+                width: 100%;
+                height: 24px;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            #sec6box1{
+                width: 290px;
+                height: 738px;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-bottom: 40px;
+            }
+            #sec6b1R1{
+                width: 290px;
+                height: 217px;
+                display: block;
+                background-position:top ;
+                background-size: 100%;
+            }
+            #sec6b1R{
+                display: none;
+            }
+            #sec6b1b1{
+                width: 290px;
+                height: 408px;
+                padding-top: 0px;
+                display: block;
+                text-align: center;
+            }
+            #sec6b1b{
+                display: none;
+            }
+            .sec6b1t{
+                height: 21px;
+                font-size: 21px;
+                margin-bottom: 15px;
+            }
+            #hhh{
+                margin-bottom: 4px;
+            }
+            .sec6b1font{
+                height: 18px;
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+            #sec6b1fl{
+                height: 14px;
+                font-size: 14px;
+                margin-bottom: 40px; 
+            }
+            #sec6b1font1{
+                height: 18px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            #sec6b2{
+                text-align: center;
+                margin-bottom: 150px;
+            }    
+            #sec6b2box{
+                display: none;
+            }
+            #sec6b2bbb{
+                display: block;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            #sec6b2b11{
+                height: 21px;
+                font-size: 21px;
+                margin-bottom: 15px;
+            }
+            .sec6b2b2{
+                font-size: 18px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            .sec6b2line{
+                width: 100px;
+                height: 1px;
+                margin:20px 50px;
+            }
+            #nnn{
+                margin-bottom: 25px;
+            }
+            #sec6b2b2{
+                height: unset;
+            }
+            .sec6b2b3{
+                height: unset;
+                font-size: 18px;
+            }
+            #sec6box3{
+                width: 100%;
+                height: unset;
+                flex-wrap: wrap;  
+                text-align: center;  
+            }
+            .yyy{
+                display: block;
+            }
+            .fb1{
+                display: none;
+            }
+            .fb2{
+                display: none;
+            }
+            .fb1f1{
+                text-align: center;
+                font-size: 12px;
+            }
+            #fb1f1{
+                margin-top: 220px;
+            }
+            .fb1f2{
+                height: 12px;
+                line-height: 12px;
+                font-size: 12px;
+                text-align: center;
+                margin: 0;
+            }
+            #kkk{
+                margin-top: 20px;
+            }
+            .ficon{
+                width: 30px;
+                height: 30px;
+                padding-top: 15px;
+            }
+            .pa{
+                width: 100%;
+                height: 20vh;
+                background-position: bottom;
+            }
+            .openbar{
+                width: 30px;
+                height: 2px;
+                transform: rotate(0deg);
+            }
+            #op4{
+                position: absolute;
+                width: 0px;
+                height: 2px;
+                top: 50%;
+                left: -10%;
+                transform: rotate(45deg);
+            }
+            #op5{
+                position: absolute;
+                width: 0px;
+                height: 2px;
+                top:50%;
+                left: -10%;
+                transform: rotate(-45deg);
+            }
+            #sec4-1 .container{
+                height: 450px;
+                width: 100%;
+                padding-top: 50px;
+                padding-bottom: 47px;
+                display: flex;
+                align-items: unset;
+                flex-wrap: wrap;
+            }
+            #sec4-1t{
+                width: 100%;
+                height: 24px;
+                font-size: 24px;
+                padding: 0px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            .instagram-media{
+                width: 200px;
+                height: 310px;
+                padding: 0;
+                margin: 0;
+                border:0;
+            }
+            #sec4-1{
+                display: none;
+            }
+        }
+        .fff{
+            left: -10%;
+        }
+        .ttt{
+            left: -50%;
+        }
+        .pad{
+            padding-left: 390px;
+        }
+        .instagram-media{
+            width: 348px;
+            height: 540px;
+        }
+        #ig{
+            width: 100%;
+            height: 540px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #sec4-1 .container{
+            height: 100%;
+            width: 1140px;
+            padding-top: 100px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
     </style>
 </head>
 
 <body>
-    <a href="./02-about.html">
-        <div class="about">about us</div>
-    </a>
-    
-    <main class="title_padding">
-        <div class="about_title "></div>
-    </main>
-    <main class="fish padding story_cards">
-        <!-------------------------------------- 砂鍋魚頭由來html區塊開始 --------------------------------------->
-        <div class="story_title_text">
-            <h1 class="container text_h1 text_h1_padding ">林聰明沙鍋魚頭的由來</h1>
-            <h4 class="container text_h4 story_title_text_h4">賣魚頭的由來，起源於林聰明之父 – 林進卿的興趣，釣魚而展現出的一道好料理！</h4>
-        </div>
-        <!-------------------------------------- 砂鍋魚頭由來html第一區塊卡片開始 --------------------------------------->
-        <div class=" card_container">
-            <div class="card1">
-                <div class="card1_img">
-                    <div class="story1_img"></div>
-                </div>
-                <div>
-                    <div class="card1_text">
-                        民國45年，林聰明的父親在文化路夜市上擺小吃攤養家，平時的興趣是釣魚與跳舞，後人談論到林聰明的父親時，常常誇讚他的釣魚功夫。但是釣到太多的魚，就算分送給親朋好友也都吃不完，索性結合平時自己料理的私房菜，拿到自己經營的小吃攤販售。
-                    </div>
-                    <div class="circle_border1">
-                        <div class="circle1"></div>
-                        <div class="border1"></div>
-                    </div>
+    <div class="loading">
+
+    </div>
+    <div id="nav">
+        <div id="navcon">
+            <div id="navvclose">
+                <div id="cl1"></div>
+                <div id="cl2"></div>
+            </div>
+            <div id="logo"></div>
+            <div class="but">最新消息</div>
+            <div id="about" class="but">關於我們</div>
+            <div id="buy_online" class="but">宅配流程</div>
+            <div id="contect">
+                <div id="contectcon">
+                    <div id="contectfont">
+                        <div id="contectfont1">立即</div>
+                        <div id="contectfont1">訂購</div>
+                    </div> 
+                    <div id="contecticon"></div>
                 </div>
             </div>
-            <!-------------------------------------- 砂鍋魚頭由來html第一區塊卡片結束 --------------------------------------->
-            <!-------------------------------------- 砂鍋魚頭由來html第二區塊卡片開始 --------------------------------------->
-            <div class="card2">
-                <div class="card2main">
-                    <div class="card2_text">
-                        沒想到許多客人一吃，都覺得這道手路菜好吃極了，紛紛誇讚想要吃這道菜，奈不住顧客的要求，就乾脆加入這道新菜，開始了砂鍋魚頭的緣份。
-                        <br>（照片攝於民國59年，林聰明本人在攤位上顧店）</br>
-                    </div>
-                    <div class="circle_border2">
-                        <div class="border2"></div>
-                        <div class="circle2"></div>
-                    </div>
-                </div>
-                <div class="card2_img">
-                    <div class="story2_img"></div>
-                </div>
+            <div class="in">營業時間</div>
+            <div class="in fontmar numfont">12 : 00 - 22 : 00</div>
+            <div class="in">連絡電話</div>
+            <div class="in numfont">05 - 2270661</div>
+            <div class="in fontmar numfont">0977 - 117318</div>
+            <div class="in">訂單傳真</div>
+            <div class="in fontmar numfont">05 - 2280537</div> 
+            <div id="line"></div>
+            <div class="icon">
+                <div class="ic"></div>
+                <div class="ic"></div>
+                <div class="ic"></div>
             </div>
-            <!-------------------------------------- 砂鍋魚頭由來html第二區塊卡片結束 --------------------------------------->
         </div>
-        <!-------------------------------------- 砂鍋魚頭由來html區塊結束 --------------------------------------->
-    </main>
-    <!-------------------------------------- 林聰明愛木頭html區塊開始 --------------------------------------->
-
-    <main class="wood ">
-        <div class="story_title_text padding">
-            <h1 class="container text_h1 text_h1_padding">林聰明愛木頭 - 日式建築</h1>
-            <h4 class="container text_h4 story_title_text_h4 padding">
-                中正總店鋪為歷史悠久的傳統日式建築（約90年歷史），經林老闆自己巧思改造，注入了更強的生命力，展現出木頭之美，讓顧客彷彿置身於森林裡享受著淡淡的檜木香，品嚐著60年道地的傳統小吃。</h4>
-        </div>
-        <div class="swiper-width padding">
-            <div class="swiper-area">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img class="img_size" src="../img/林聰明愛木頭01.jpg" alt="" />
-                            <div class="content">
-                                <h4 class=" text_h4 story_title_text_h4">「為何會保有老建築？」</h4>
-                                <h4 class=" text_h4 story_title_text_h4">
-                                    嘉義－為檜木的故鄉。林聰明老闆對於家鄉的濃厚情誼，同時也萌生熱愛檜木的心，因此，常與家人出國時，除了欣賞不同的建築物外，對於木建築，更有獨特的情感，因此決定打造ㄧ個自己喜愛的家。
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="img_size" src="../img/林聰明愛木頭02.jpg" alt="" />
-                            <div class="content active">
-                                <h4 class=" text_h4 story_title_text_h4">「加入自己的創意，親身設計參與裝潢重修」</h4>
-                                <h4 class=" text_h4 story_title_text_h4">
-                                    成就現今店的契機，於民國94年中正路商店造街活動，翻修路面，數個月的工程，林聰明趁此時，決心改造自己的店鋪，因沒有經驗所以改造時間也比一般工程耗時更久，整修老建築及改造內部是為了打造心中的綠建築。
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="img_size" src="../img/林聰明愛木頭03.jpg" alt="" />
-                            <div class="content">
-                                <h4 class=" text_h4 story_title_text_h4">「作自己的設計師」</h4>
-                                <h4 class=" text_h4 story_title_text_h4">
-                                    首席設計師是林聰明老闆，創意美學顧問是林太太與女兒們，彼此共同的意念是要保留老建築的美，堅持使用檜木，一木一木的木頭卡榫慢慢修補，慢工出細活的精神，才得以保存這百年的建築。
-                                </h4>
-                            </div>
-
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="img_size" src="../img/林聰明愛木頭04.jpg" alt="" />
-                            <div class="content">
-                                <h4 class=" text_h4 story_title_text_h4">「自己的喜歡也帶給客人」</h4>
-                                <h4 class=" text_h4 story_title_text_h4">
-                                    林聰明常說裝修過程比生孩子還辛苦，也因修改而意見紛歧，與其說房子是用蓋的,更貼切的形容是「吵」出來的。這些過程真的很不容易。裝修完的店面，成為全家人心中的驕傲，辛苦是值得的。歡迎蒞臨本店,貼近林家的建築用心，享受時空下的建築美。
-                                </h4>
-                            </div>
-                        </div>
+        <div id="navlogo"></div>
+        
+    </div>
+    <div id="timebut">
+        <div id="op1" class="openbar"></div>
+        <div id="op2" class="openbar"></div>
+        <div id="op3" class="openbar"></div>
+        <div id="op4" class="openbar"></div>
+        <div id="op5" class="openbar"></div>
+    </div>
+    <div id="slidenav">
+        <div id="navcon11">
+            <div id="boxxx">
+                <div class="but">最新消息</div>
+                <div id="about" class="but">關於我們</div>
+                <div id="buy_online" class="but">宅配流程</div>
+                <div id="contect">
+                    <div id="contectcon">
+                        <div id="contectfont">
+                                <div id="contectfont1">立即</div>
+                            <div id="contectfont1">訂購</div>
+                        </div> 
+                        <div id="contecticon"></div>
                     </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-button-next">
-                        <i class="fas fa-chevron-circle-right "></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="fas fa-chevron-circle-left "></i>
-                    </div>
+                </div>
+                <div class="in1">營業時間</div>
+                <div class="in1 fontmar numfont">12 : 00 - 22 : 00</div>
+                <div class="in1">連絡電話</div>
+                <div class="in1 numfont">05 - 2270661</div>
+                <div class="in1 fontmar numfont">0977 - 117318</div>
+                <div class="in1">訂單傳真</div>
+                <div class="in1 fontmar numfont">05 - 2280537</div> 
+                <div id="line"></div>
+                <div class="icon">
+                    <div class="ic"></div>
+                    <div class="ic"></div>
+                    <div class="ic"></div>
                 </div>
             </div>
         </div>
-        <div class="wood_border"></div>
-    </main>
-    <!-------------------------------------- 林聰明愛木頭html區塊結束 --------------------------------------->
-    <!-------------------------------------- 老街二通情，劃時代的中正路html區塊 --------------------------------------->
-    <main class="padding_b150">
-        <div class="story_title_text padding">
-            <h1 class="container text_h1 text_h1_padding">老街二通情，劃時代的中正路</h1>
+    </div>
+    </div>
+    <div id="minnav" class='fff'>
+        <div id="minnavcon">
+            <div id="open">
+                <div id="op1" class="openbar"></div>
+                <div id="op2" class="openbar"></div>
+                <div id="op3" class="openbar"></div>
+            </div>
+            <div class="minnavline1"></div>
+            <div id="minnavgobuy" class="minnaviconicon"></div>
+            <div class="minnavline1"></div>
+            <div id="minfb" class="minnaviconicon"></div>
+            <div id="minig" class="minnaviconicon"></div>
+            <div id="minline" class="minnaviconicon"></div>
         </div>
-        <!------------------------ 中正路圖片開始 ------------------------>
-        <div class="street_img margin"></div>
-
-        <!------------------------ 中正路圖片結束 ------------------------>
-        <div class="story_title_text ">
-            <h4 class="container_text text_h4">【起灶處】</h4>
-            <h4 class="container text_h4 ">
-                日據時代，中山路習稱大通，即日語大街意思，中正路則稱「二通」。當時二通的振山眼科診所由頗負盛名的劉傳來醫師經營，劉院長是林聰明創業時期的恩人，且知道林聰明的創業困難，加上大女兒剛出生，讓一家人在診所的騎樓下擺設路邊攤，且不收店租達數十年，使林聰明一家人，永遠感恩大德。
-            </h4>
+    </div> 
+    <div id="home"></div>
+    <div id="sec1">
+        <div class="container">
+            <div id="fontblock">
+                <div id="s1t">最新消息</div>
+                <div id="s1fon">• 2020/09/10 全門市將於9/10(四)店休一日</div>
+                <div id="s1fon">• 2020/07/30 全門市將於8/6(四)消毒日，店休一日</div>
+                <div id="s1fon">• 2020/04/06 配合政府政策及環境消毒，門市店休五日(4/6~4/10)</div>
+                <div id="s1fontend">• 2020/03/26 防疫如作戰，聰明措施，保護我家</div>
+                <div id="s1foot">
+                    <div id="s1more">MORE</div>
+                </div>
+            </div>
+            <div id="fontblock1">
+                <div id="s1t">最新消息</div>
+                <div id="s1fon1">• 2020/09/10</div>
+                <div id="s1fon2"> 全門市將於9/10(四)店休一日</div>
+                <div id="s1fon1">• 2020/07/30</div>
+                <div id="s1fon2"> 全門市將於8/6(四)消毒日，店休一日</div>
+                <div id="s1fon1">• 2020/04/06</div> 
+                <div id="s1fon2">配合政府政策及環境消毒，門市店休五日(4/6~4/10)</div>
+                <div id="s1fon1">• 2020/03/26</div> 
+                <div id="s1fontend1">防疫如作戰，聰明措施，保護我家</div>
+                <div id="s1foot">
+                    <div id="s1more">MORE</div>
+                </div>
+            </div>
         </div>
-    </main>
-    <footer class="about_footer">
-        <div class="footer_img flex-container text_h4">
-            <p >食安說明 • 法律顧問</p>
-            <p>版權所有•不得轉載 © 2003-2020 The Smartfish Co. Ltd All Rights Reserved</p>
-            <p>網頁設計 吃魚變聰明 團隊</p>
+    </div>
+    <div id="sec2">
+        <div class="container">
+            <div id="s2t">關於我們</div>
+            <div id="s2vid">
+                <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FOrangeJiu%2Fvideos%2F832463147222555%2F&show_text=0&width=560" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+            </div>
+            <div id="s2font">民國45年，林聰明的父親在文化路夜市上擺小吃攤養家，平時的興趣是釣魚與跳舞，後人談論到林聰明的父親時，常常誇讚他的釣魚功夫。但是掉到太多的餘，就算分送給親朋好友也吃不完，但是釣到太多的魚，就算分送給親朋好友也吃不完，所幸結合平時自己料理的私房菜，拿到自己經營的小吃攤販售。</div>
+            <a href="/html/02-about.html">
+                <div id="s2more">MORE</div>
+            </a>
+            
+            <div id="s2foot2"></div>
         </div>
-    </footer>
-
-    <!-------------------------------------- 老街二通情，劃時代的中正路html區塊結束 --------------------------------------->
-
-
-    <!-- js jq套件 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <!-- js jq套件結束 -->
-
+        <div id="s2foot"></div>
+    </div>
+    <div id="sec3">
+        <div class="wrapper">
+            <div id="box1" class="box">
+                <div id="sec3img1" class="imgon"></div>
+                <div id="tribox1" class="tribox">
+                    <div id="tri1" class="tri"></div>
+                </div>
+                <div id="imgbox1" class="imgbox">
+                    <div id="sec3img11"></div>
+                    <div id="closebox1" class="closebox"></div>                 
+                </div>
+            </div>
+            <div id="box2" class="box">
+                <div id="sec3img2" class="imgon"></div>
+                <div id="tribox2" class="tribox">
+                    <div id="tri2" class="tri"></div>
+                </div>
+                <div id="imgbox2" class="imgbox">
+                    <div id="sec3img22"></div>
+                    <div id="closebox2" class="closebox"></div>   
+                </div>
+            </div>
+            <div id="box3" class="box">
+                <div id="sec3img3" class="imgon"></div>
+                <div id="tribox3" class="tribox">
+                    <div id="tri3"  class="tri"></div>
+                </div>
+                <div id="imgbox3" class="imgbox">
+                    <div id="sec3img33"></div>
+                    <div id="closebox3" class="closebox"></div>                 
+                </div>
+            </div>
+            <div id="box4" class="box">
+                <div id="sec3img4" class="imgon"></div>
+                <div id="tribox4" class="tribox">
+                    <div id="tri4"  class="tri"></div>
+                </div>
+                <div id="imgbox4" class="imgbox">
+                    <div id="sec3img44"></div>
+                    <div id="closebox4" class="closebox"></div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sec4">
+        <div class="container">
+            <div id="sec4t">輕鬆宅配3步驟</div>
+            <div id="three">
+                <div class="step"></div>
+                <div class="step"></div>
+                <div class="step"></div>
+                <div id="sec4buy2">
+                    <div id="s4bf"></div>
+                    <div id="s4point"></div>
+                </div>
+            </div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScScWqDLxOVwJ4SGVzbSZg9ftcyZACGsRdufysGcfQ5OUPUbg/viewform" target="_blank">
+                <div id="sec4buy">
+                    <div id="s4bf"></div>
+                    <div id="s4point"></div>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+    <div id="sec4-1">
+        <div class="container">
+            <div id="sec4-1t">媒體報導</div>
+            <div id="ig">
+                <div id="ig1">
+                    <blockquote class="instagram-media"  data-instgrm-permalink="https://www.instagram.com/p/CGCym3vBsKc/?utm_source=ig_embed&amp;utm_campaign=loading">
+                
+                </div>
+            
+                <div id="ig2">
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B9l90KGBEYe/?utm_source=ig_embed&amp;utm_campaign=loading">
+                
+                </div>
+                <div id="ig3">
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BxX7b_znEFU/?utm_source=ig_embed&amp;utm_campaign=loading">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sec5">
+        <div class="container">
+            <div class="sec5box">
+                <div class="sec5pic"></div>
+                <div class="sec5map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.4798956282157!2d120.45384964023117!3d23.47921816982109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e94317548cf79%3A0x5d2d6566e26ff9dd!2z5p6X6IGw5piO5rKZ6Y2L6a2a6aCtLeWJteWni-e4veW6lw!5e0!3m2!1szh-TW!2stw!4v1602731373435!5m2!1szh-TW!2stw" width="395" height="445" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
+                </div>
+                <div class="sec5map1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.4798956282157!2d120.45384964023117!3d23.47921816982109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e94317548cf79%3A0x5d2d6566e26ff9dd!2z5p6X6IGw5piO5rKZ6Y2L6a2a6aCtLeWJteWni-e4veW6lw!5e0!3m2!1szh-TW!2stw!4v1602731373435!5m2!1szh-TW!2stw" width="134" height="152" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="sec5font">600 嘉義市東區中正路361號</div>
+            </div>
+            <div class="sec5box">
+                <div class="sec5map1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.490609267892!2d120.45158942133925!3d23.478832005011753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e9431417e6cb1%3A0xb78102095d89a1d9!2zNjAw5ZiJ576p5biC5p2x5Y2A5YWJ6I-v6LevMTIy6Jmf!5e0!3m2!1szh-TW!2stw!4v1602732148688!5m2!1szh-TW!2stw" width="134" height="152" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div id="sec5pic" class="sec5pic"></div>
+                <div id="sec5map" class="sec5map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.490609267892!2d120.45158942133925!3d23.478832005011753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e9431417e6cb1%3A0xb78102095d89a1d9!2zNjAw5ZiJ576p5biC5p2x5Y2A5YWJ6I-v6LevMTIy6Jmf!5e0!3m2!1szh-TW!2stw!4v1602732148688!5m2!1szh-TW!2stw" width="395" height="445" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div id="sec5font" class="sec5font">600嘉義市東區光華路122號</div>
+            </div>
+        </div>
+    </div>
+    <div id="sec6">
+        <div class="container6">
+            <div id="sec6t">停車資訊</div>
+            <div id="sec6box1">
+                <div id="sec6b1R1" class="sec6b1b"></div>
+                <div id="sec6b1b1" class="sec6b1b">
+                    <div class="sec6b1t">有特約</div>
+                    <div id="hhh" class="sec6b1font">• 光彩街建安停車場</div>
+                    <div class="sec6b1font"> &nbsp;&nbsp;&nbsp;( 文化郵局側門處 )</div>
+                    <div class="sec6b1fl">&nbsp;&nbsp;&nbsp;限內用消費滿1000折抵1小時，</br>最高2000原可折抵2小時上限</div>
+                    <div class="sec6b1t">無特約</div>
+                    <div class="sec6b1font">• 西市場大樓停車場</div>
+                    <div id="sec6b1fl" class="sec6b1fl">嘉義市國華街245號 ( 近中山</br>路口轉入 ) 離本店約300公尺</div>
+                    <div class="sec6b1font">• 中央廣場地下停車場</div>
+                    <div class="sec6b1fl">嘉義市民權路371號 B1( 近文化</br>路口轉入 ) 離本店約700公尺</div>
+                    <div class="sec6b1font">嘉義市停車場即時連結資訊</div>
+                    <div id="sec6b1font1" class="sec6b1font">http://200.130.89.16/?LAN=TW</div>
+                </div>
+                <div id="sec6b1b" class="sec6b1b">
+                    <div class="sec6b1t">有特約</div>
+                    <div class="sec6b1font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• 光彩街建安停車場 ( 文化郵局側門處 )</div>
+                    <div class="sec6b1fl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;限內用消費滿1000折抵1小時，最高2000原可折抵2小時上限</div>
+                    <div class="sec6b1t">無特約</div>
+                    <div class="sec6b1font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• 西市場大樓停車場</div>
+                    <div id="sec6b1fl" class="sec6b1fl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;嘉義市國華街245號 ( 近中山路口轉入 ) 離本店約300公尺</div>
+                    <div class="sec6b1font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• 中央廣場地下停車場</div>
+                    <div class="sec6b1fl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;嘉義市民權路371號 B1( 近文化路口轉入 ) 離本店約700公尺</div>
+                    <div class="sec6b1font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;嘉義市停車場即時連結資訊</div>
+                    <div id="sec6b1font1" class="sec6b1font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://200.130.89.16/?LAN=TW</div>
+                </div>
+                <div id="sec6b1R" class="sec6b1b"></div>
+            </div>
+            <div id="sec6t">聯絡資訊</div>
+            <div id="sec6b2">
+                <div id="sec6b2bbb">
+                        <div id="sec6b2b11" class="sec6b2b1">營業時間 : 12 : 00 - 22 : 00</div>
+                        <div id="nnn" class="sec6b2b2">不定時公休，請注意官網</br>與臉書訊息</div>
+                   
+                    <div class="sec6b2line"></div>
+                    <div id="sec6b2b2" class="sec6b2bb">
+                        <div id="sec6t">服務專線</div>
+                        <div class="sec6b2b2">電話 : 05-2270-661</div>
+                        <div class="sec6b2b2">傳真 : 05-2280-537</div>
+                    </div>
+                    <div class="sec6b2line"></div>
+                    <div id="sec6b2b3" class="sec6b2bb">
+                        <div id="sec6t">社群連結</div>
+                        <div class="sec6b2b3">臉書 : @smartfish168</div>
+                        <div class="sec6b2b3">LINE : 0977117318</div>                       
+                    </div>
+                </div>
+                <div id="sec6b2box">
+                    <div id="sec6b2b">
+                        <div id="sec6b2b1" class="sec6b2bb">
+                            <div id="sec6b2b11" class="sec6b2b1">營業時間 : 12 : 00 - 22 : 00</div>
+                            <div class="sec6b2b2">不定時公休，請注意官網與臉書訊息</div>
+                        </div>
+                        <div class="sec6b2line"></div>
+                        <div id="sec6b2b2" class="sec6b2bb">
+                            <div class="sec6b2b1">服務專線</div>
+                            <div class="sec6b2b2">電話 : 05-2270-661</div>
+                            <div class="sec6b2b2">傳真 : 05-2280-537</div>
+                        </div>
+                        <div class="sec6b2line"></div>
+                        <div id="sec6b2b3" class="sec6b2bb">
+                            <div class="sec6b2b1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;社群連結</div>
+                            <div class="sec6b2b3">臉書 : @smartfish168</div>
+                            <div class="sec6b2b3">LINE : 0977117318</div>                       </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sec6box3">
+                <div id="fb1f1" class="fb1f1 yyy">食安說明 • 法律顧問</div>
+                <div class="fb1f2 yyy">版權所有•不得轉載 © 2003-2020</br> The Smartfish Co. Ltd All Rights Reserved</div>
+                <div id="kkk" class="fb1f1 yyy">網頁設計 吃魚變聰明 團隊</div>
+                <div id="ficon1" class="ficon yyy"></div>
+                <div id="ficon2" class="ficon yyy"></div>
+                <div id="ficon3" class="ficon yyy"></div>
+                <div class="fb1">
+                    <div class="fb1f1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;食安說明 • 法律顧問</div>
+                    <div class="fb1f2">版權所有•不得轉載 © 2003-2020 The Smartfish Co. Ltd All Rights Reserved</div>
+                    <div class="fb1f1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;網頁設計 吃魚變聰明 團隊</div>
+                </div>
+                <div class="fb2">
+                    <div id="ficon1" class="ficon"></div>
+                    <div id="ficon2" class="ficon"></div>
+                    <div id="ficon3" class="ficon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pa"></div>
+    <script async src="//www.instagram.com/embed.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
 
     <script>
-        //////////////////////////// 林聰明愛木頭js-swiper程式開始//////////////////////
-        // 新增一個變數wood_swiper，將類別banner-swiper丟入，且對.banner-swiper做偵測動作。
-        var wood_swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',//可以自行更換圖案，將原本的類別樣式取消，自訂一個新的樣式類別，在'.swiper-button-next'放入新的類別即可。
-                prevEl: '.swiper-button-prev',
-            },
-            slidesOffsetBefore: 0,
-            speed: 800,
-            initialSlide: 1,//將索引值1的圖片，設成預設值。
-            // spaceBetween: '8%',//圖片與圖片間的距離
-            slidesPerView: 3,//能夠在同一個視窗顯示的物件數量
-            centeredSlides: true,//選到的物件會置中
-            paginationClickable: true,
-            effect: 'coverflow',//effect(效果): 'coverflow'(3D視窗呈現效果)
-            coverflowEffect: {
-                rotate: 0,
-                stretch: 0,
-                depth: 50,
-                modifier: 3,
-                slideShadows: false
-            },
-            // loop: true,//圖片循環
-            simulateTouch: true,//
-            mousewheelControl: true//滑鼠滾輪滑動圖片變換
-        });
-        var contents = document.querySelectorAll('.content')//將所有content宣告成新的變數
-
-        //swiper事件寫法一，請查閱swiper API的 Events事件
-        wood_swiper.on('slideChange', function () {
-            console.log(wood_swiper.activeIndex);//wood_swiper此為要做事件的swiper名字.(activeIndex為取得目前選擇到的圖片索引值)
-            const content = contents[wood_swiper.activeIndex];//將contents的索引值用wood_swiper取得道的索引值，使得兩方可以同時出現或消失。
-            remove_active()//將content的active先做刪除，才能將不顯示的content隱藏。
-            content.classList.add("active")//將被選到的banner的content增加顯示的類別，將資料顯示出來。        
-        })
-        function remove_active() {
-            contents.forEach(
-                function (content) {
-                    content.classList.remove("active");
+        $(window).scroll(function(){
+            if($(window).width() > 768){
+                console.log($(window).scrollTop());
+                if($(window).scrollTop() >= 1080){
+                    $("#nav").addClass('ttt',1000,1);
+                    $('#minnav').removeClass('fff',1000,1);
+                    $('#navvclose')[0].style.display = "none";
                 }
-            )
-        }
+                else if($(window).scrollTop() < 1080){
+                    $("#nav").removeClass('ttt',1000,1);
+                    $('#minnav').addClass('fff',1000,1);
+                }
+            }
+        })
+        
 
-//////////////////////////// 林聰明愛木頭js-swiper程式結束//////////////////////
+        $('#open').click(function(){
+            $("#nav").animate({width : '390px',left:'0%'},1000);
+            $('#minnav').animate({left:'-10%'},1000);
+            $('#sec1').addClass('pad');
+            $('#sec2').addClass('pad');
+            $('#sec3').addClass('pad');
+            $('#sec4').addClass('pad');
+            $('#sec4-1').addClass('pad');
+            $('#sec5').addClass('pad');
+            $('#sec6').addClass('pad');
+            $('#navvclose')[0].style.display = "block";
+        })
+        $('#navvclose').click(function(){
+            $("#nav").animate({left:'-50%'},1000);
+            $('#minnav').animate({left:'0%'},1000);
+            $('#sec1').removeClass('pad');
+            $('#sec2').removeClass('pad');
+            $('#sec3').removeClass('pad');
+            $('#sec4').removeClass('pad');
+            $('#sec4-1').removeClass('pad');
+            $('#sec5').removeClass('pad');
+            $('#sec6').removeClass('pad');
+            $('#navvclose')[0].style.display = "none";
+        })
 
+        $('#timebut1').click(function(){
+            $("#nav").animate({left:'-50%'},1000);
+            $('#minnav').animate({left:'0%'},1000);
+        })
+        var X = 0;
+        $('#timebut').click(function(){
+            $('#slidenav').slideToggle("slow");
+            if(X == 0){
+                $('.openbar').animate({width:'0px'},500)
+                $('#op4').animate({width:'35px',opacity:'1'},500)
+                $('#op5').animate({width:'35px',opacity:'1'},500)
+                X = 1
+            }else{
+                $('#op4').animate({width:'0px',opacity:'0'},500)
+                $('#op5').animate({width:'0px',opacity:'0'},500)
+                $('.openbar').delay(500).animate({width:'30px'},500)
+                X = 0
+            }
+        })
+
+        $('#box1').mouseenter(function(){
+            $('#tribox1').animate({opacity:'1'},0);
+        })
+        $('#box1').click(function(){
+            $('#imgbox1').animate({height: '100%',top:'0%',opacity:'1'},500);
+            $('#sec3img11').animate({top:'22px',opacity:'1'},0);
+            $('#closebox1').animate({opacity:'1'},500);
+            $('.tribox').animate({opacity:'0'},0);
+        })
+        $('#box1').mouseleave(function(){
+            $('#imgbox1').animate({height: '0%',top:'100%',opacity:'0'},500);
+            $('#sec3img11').animate({top:'-256px',opacity:'0'},500);
+            $('#closebox1').animate({opacity:'0'},500);
+            $('#tribox1').animate({opacity:'0'},0);
+        })
+
+        $('#box2').mouseenter(function(){
+            $('#tribox2').animate({opacity:'1'},0);
+        })
+        $('#box2').click(function(){
+            $('#imgbox2').animate({height: '100%',top:'0%',opacity:'1'},500);
+            $('#sec3img22').animate({top:'22px',opacity:'1'},0);
+            $('#closebox2').animate({opacity:'1'},500);
+            $('#tribox2').animate({opacity:'0'},0);
+        })
+        $('#box2').mouseleave(function(){
+            $('#imgbox2').animate({height: '0%',top:'100%',opacity:'0'},500);
+            $('#sec3img22').animate({top:'-406px',opacity:'0'},500);
+            $('#closebox2').animate({opacity:'0'},500);
+            $('#tribox2').animate({opacity:'0'},0);
+        })
+
+        $('#box3').mouseenter(function(){
+            $('#tribox3').animate({opacity:'1'},0);
+        })
+        $('#box3').click(function(){
+            $('#imgbox3').animate({height: '100%',top:'0%',opacity:'1'},500);
+            $('#sec3img33').animate({top:'22px',opacity:'1'},0);
+            $('#closebox3').animate({opacity:'1'},500);
+            $('#tribox3').animate({opacity:'0'},0);
+        })
+        $('#box3').mouseleave(function(){
+            $('#imgbox3').animate({height: '0%',top:'100%',opacity:'0'},500);
+            $('#sec3img33').animate({top:'-358px',opacity:'0'},500);
+            $('#closebox3').animate({opacity:'0'},500);
+            $('.tribox').animate({opacity:'0'},0);
+        })
+
+        $('#box4').mouseenter(function(){
+            $('#tribox4').animate({opacity:'1'},0);
+        })
+        $('#box4').click(function(){
+            $('#imgbox4').animate({height: '100%',top:'0%',opacity:'1'},500);
+            $('#sec3img44').animate({top:'22px',opacity:'1'},0);
+            $('#closebox4').animate({opacity:'1'},500);
+            $('#tribox4').animate({opacity:'0'},0);
+        })
+        $('#box4').mouseleave(function(){
+            $('#imgbox4').animate({height: '0%',top:'100%',opacity:'0'},500);
+            $('#sec3img44').animate({top:'-287px',opacity:'0'},500);
+            $('#closebox4').animate({opacity:'0'},500);
+            $('#tribox4').animate({opacity:'0'},0);
+        })
+        
     </script>
 </body>
 

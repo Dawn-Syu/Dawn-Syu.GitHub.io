@@ -38,7 +38,6 @@ body {
          }
          @media(max-width: 768px){
             padding-bottom: 65px;
-            
         }
     }
 //////////////////////沙鍋魚頭由來html區塊開始//////////////////
@@ -131,6 +130,10 @@ body {
                             height: 422px;                    
                         }
                         @media(max-width: 768px){
+                            width: 563px;
+                            height: 350px;                    
+                        }
+                        @media(max-width: 410px){
                             width: 95%;
                             height: 230px;   
                                              
@@ -245,6 +248,12 @@ body {
                             margin-bottom: 60px;              
                         }
                         @media(max-width: 768px){
+                            width: 563px;
+                            height: 322px;
+                            order: -1;    
+                            margin-bottom: 60px;              
+                        }
+                        @media(max-width: 410px){
                             width: 95%;
                             height: 206px; 
                             margin-bottom: 20px;                   

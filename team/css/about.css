@@ -231,6 +231,13 @@ body {
 
 @media (max-width: 768px) {
   .story_cards .card_container .card1 .card1_img {
+    width: 563px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 410px) {
+  .story_cards .card_container .card1 .card1_img {
     width: 95%;
     height: 230px;
   }
@@ -399,6 +406,17 @@ body {
 }
 
 @media (max-width: 768px) {
+  .story_cards .card_container .card2 .card2_img {
+    width: 563px;
+    height: 322px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 410px) {
   .story_cards .card_container .card2 .card2_img {
     width: 95%;
     height: 206px;
