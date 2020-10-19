@@ -100,6 +100,8 @@
             width: 76px;
             height: 76px;
             font-size: 38px;
+            text-decoration:none;
+            color: white;
         }
         #contectfont1{
             width: 76px;
@@ -107,6 +109,8 @@
             font-size: 38px;
             line-height: 38px;
             margin-bottom: 8px;
+            text-decoration:none;
+            color: white;
         }
         #contecticon{
             width: 80px;
@@ -288,12 +292,15 @@
             font-weight: 900;
             color: white;
             cursor: pointer;
+            text-decoration: none;
         }
         #s1foot{
             width: 100%;
             height: 35px;
             display: flex;
             justify-content: center;
+            color:white;
+            text-decoration: none;
         }
         #sec2{
             width: 100%;
@@ -514,11 +521,22 @@
         }
 
         .imgbox{
+            opacity: 0;
             width: 100%;
             height: 0%;
             background-color: rgba(0, 0, 0, 0.7);
-            position: absolute;
+            position: absolute;                      
             top:100%;
+        }
+
+        .sec3imgbox{
+            width: 80%;
+            height: 40%;
+            position: absolute;
+            top:47%;
+            left: 10%;
+            color: white;
+            font-size: 21px;
         }
 
         .tribox{
@@ -1117,6 +1135,16 @@
                 background-image: url("../img/Q47A6159\(02\).jpg");
                 transform: scaleY(-1);
             }
+            .box:hover {
+                width: 100%;
+            }
+            .box:hover .imgbox{
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                /* transform: scaleY(-1); */
+                top:0%;
+            }
             
             #sec3img1{
                 width: 87px;
@@ -1157,8 +1185,9 @@
 
             }
             .imgbox{
-                display: none;
-                /* transform: scaleY(-1); */
+                display: block;
+                height: 0%;
+                top:0%
             }
             #sec4{
                 height: 568px;
@@ -1430,6 +1459,13 @@
             #sec4-1{
                 display: none;
             }
+            .sec3imgbox{
+                transform: scaleY(-1);    
+                font-size: 12px;
+            }
+            #sec3img11,#sec3img22,#sec3img33,#sec3img44,.closebox{
+                display: none;
+            }
         }
         .fff{
             left: -10%;
@@ -1477,10 +1513,10 @@
             <div id="buy_online" class="but">宅配流程</div>
             <div id="contect">
                 <div id="contectcon">
-                    <div id="contectfont">
+                    <a id="contectfont" href="https://docs.google.com/forms/d/e/1FAIpQLScScWqDLxOVwJ4SGVzbSZg9ftcyZACGsRdufysGcfQ5OUPUbg/viewform">
                         <div id="contectfont1">立即</div>
                         <div id="contectfont1">訂購</div>
-                    </div> 
+                    </a> 
                     <div id="contecticon"></div>
                 </div>
             </div>
@@ -1493,8 +1529,8 @@
             <div class="in fontmar numfont">05 - 2280537</div> 
             <div id="line"></div>
             <div class="icon">
-                <div class="ic"></div>
-                <div class="ic"></div>
+                <a class="ic" href="https://www.facebook.com/smartfish168/"></a>
+                <a class="ic" href="https://www.instagram.com/smartfish168/?utm_source=ig_embed"></a>
                 <div class="ic"></div>
             </div>
         </div>
@@ -1564,9 +1600,9 @@
                 <div id="s1fon">• 2020/07/30 全門市將於8/6(四)消毒日，店休一日</div>
                 <div id="s1fon">• 2020/04/06 配合政府政策及環境消毒，門市店休五日(4/6~4/10)</div>
                 <div id="s1fontend">• 2020/03/26 防疫如作戰，聰明措施，保護我家</div>
-                <div id="s1foot">
+                <a id="s1foot"href="http://www.smartfish.com.tw/ploy/ploy_view.asp?ClassID=627">
                     <div id="s1more">MORE</div>
-                </div>
+                </a>
             </div>
             <div id="fontblock1">
                 <div id="s1t">最新消息</div>
@@ -1608,6 +1644,13 @@
                 </div>
                 <div id="imgbox1" class="imgbox">
                     <div id="sec3img11"></div>
+                    <div class="sec3imgbox">每天超過十小時的熬煮豬骨高湯，從白白湯底色熬至成濃濃豆漿色般獨家極品高湯。</br></br>
+                        水庫新鮮運送肥美的大頭活鰱魚，自鰓上取豐厚的魚頭，魚身採魚中，魚尾切塊，魚體輕沾番薯粉炸至金黃色，
+                        用新鮮豬油高溫油炸，並恆溫控制使其熟透炸至金黃色澤，鎖住鰱魚肉質的彈性鮮味。</br></br>
+                        濃濃的高湯佐以精選的大白菜、扁魚、木耳、蝦米、豆腐、豆皮、蒜頭、辣椒、蔥、豬肉(三層肉)及獨家配方，
+                        再加上特製的沙茶醬，香濃醇口，有點辣又不會太辣的味道...總是令人垂涎三呎，一嚐成主顧。
+                        
+                        </div>
                     <div id="closebox1" class="closebox"></div>                 
                 </div>
             </div>
@@ -1618,6 +1661,12 @@
                 </div>
                 <div id="imgbox2" class="imgbox">
                     <div id="sec3img22"></div>
+                    <div class="sec3imgbox">正港台灣火雞，每天新鮮市場運送，清洗乾淨後立即入水烹調，保持肉質鮮嫩且彈性度好，
+                        火雞要能留住其美味就在於火候的控制，恰當的水溫火候才能將火雞的香、甜、彈性的肉質展現出來。</br></br>
+                        重要配角醬汁！雞骨慢熬數小時製成雞湯，再加入優質醬油與店家獨特配方熬煮八小時，最後將烹煮好的火雞肉經過切片拔絲後舖在精選上等的蓬萊米飯上，藉由黏硬度適中的Q軟白米飯粒，
+                        使火雞肉與醬汁洽到好處，充分發揮香甜度，口感上大大加分，一口接一口。
+                        
+                        </div>
                     <div id="closebox2" class="closebox"></div>   
                 </div>
             </div>
@@ -1628,6 +1677,14 @@
                 </div>
                 <div id="imgbox3" class="imgbox">
                     <div id="sec3img33"></div>
+                    <div class="sec3imgbox">林聰明的父親留傳下來的經典湯，成為來店必點的小吃，歷史可是比沙鍋魚頭悠久，在老一輩嘉義人心中更具代表性，
+                        顧客形容此湯的煮法特別聰明，私下喜稱這道小吃為「聰明蛋」。</br></br>
+                        新鮮的季節海蝦裹上魚漿用高湯川燙，咬下即感受蝦仁的彈牙同時嘴裡充滿蝦仁的鮮甜。</br></br>
+                        特選紅仁鴨蛋，將蛋打在具有洞口的平底鍋上，利用高湯與熱氣原理，將蛋半蒸半煮至熟透，果凍般的嫩滑口感。</br>
+                        大骨熬煮的高湯，再加入些許冬菜（即醃製過的高麗菜），冬菜鹹甜的氣味，灑上芹菜珠，清爽搭襯！</br></br>
+                        
+                        
+                        </div>
                     <div id="closebox3" class="closebox"></div>                 
                 </div>
             </div>
@@ -1638,6 +1695,12 @@
                 </div>
                 <div id="imgbox4" class="imgbox">
                     <div id="sec3img44"></div>
+                    <div class="sec3imgbox">不管颱風雨天仍堅持上市場採購，親選當天尚青的蔬菜，否則寧可不賣，長年的堅持讓顧客吃得天然又健康！</br></br>
+                        阿菁涼菜的精隨在於控溫的技術，火候的拿捏使新鮮蔬菜在急速川燙後仍保留青菜原色及養份，
+                        烹煮中完全不放任何一滴調味，燙好的青菜經急速冷卻後放置冰櫃保鮮，最後再淋上聰明獨家自製的蒜蓉醬油，
+                        讓大家吃出健康吃出美味！
+                        
+                        </div>
                     <div id="closebox4" class="closebox"></div> 
                 </div>
             </div>
@@ -1650,18 +1713,15 @@
                 <div class="step"></div>
                 <div class="step"></div>
                 <div class="step"></div>
-                <div id="sec4buy2">
+                <a id="sec4buy2" href="https://docs.google.com/forms/d/e/1FAIpQLScScWqDLxOVwJ4SGVzbSZg9ftcyZACGsRdufysGcfQ5OUPUbg/viewform">
                     <div id="s4bf"></div>
                     <div id="s4point"></div>
-                </div>
+                </a>
             </div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScScWqDLxOVwJ4SGVzbSZg9ftcyZACGsRdufysGcfQ5OUPUbg/viewform" target="_blank">
-                <div id="sec4buy">
-                    <div id="s4bf"></div>
-                    <div id="s4point"></div>
-                </div>
-            </a>
-            
+            <div id="sec4buy">
+                <div id="s4bf"></div>
+                <div id="s4point"></div>
+            </div>
         </div>
     </div>
     <div id="sec4-1">
@@ -1792,8 +1852,8 @@
                     <div class="fb1f1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;網頁設計 吃魚變聰明 團隊</div>
                 </div>
                 <div class="fb2">
-                    <div id="ficon1" class="ficon"></div>
-                    <div id="ficon2" class="ficon"></div>
+                    <a id="ficon1" class="ficon" href="https://www.facebook.com/smartfish168/"></a>
+                    <a id="ficon2" class="ficon" href="https://www.instagram.com/smartfish168/?utm_source=ig_embed"></a>
                     <div id="ficon3" class="ficon"></div>
                 </div>
             </div>
