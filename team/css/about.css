@@ -45,6 +45,7 @@ body {
 
 @media (max-width: 1024px) {
   .title_padding {
+    padding-top: 39px;
     padding-bottom: 65px;
   }
 }

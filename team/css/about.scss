@@ -20,6 +20,7 @@ body {
     }
     //////////////////// title圖片////////////////////////
     .title_padding{
+        
         padding-bottom: 100px;
 
         .about_title{
@@ -34,6 +35,7 @@ body {
              }
         }
          @media(max-width: 1024px){
+            padding-top: 39px;
             padding-bottom: 65px;
          }
          @media(max-width: 768px){
