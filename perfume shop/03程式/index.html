@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>香水電商</title>
     <link rel="stylesheet" href="../css/all.css">
 </head>
+
 <body>
-    <h1>test scss</h1>
+    <!-- .header>(img>a)+(ul>li*4>a) -->
+    <div class="header container">
+        <h1>
+            <a href="#">
+                <img class="header_logo" src="../01素材/d’Perfume.png" alt="logo"></img>
+            </a>
+        </h1>
+        <ul class="display_flex_j_between">
+            <li>
+                <i class="fas fa-store-alt"></i>
+                <a href="">Product</a>
+            </li>
+            <li>
+                <i class="fas fa-user"></i>
+                <a href="">log in</a>
+            </li>
+            <li>
+                <i class="fas fa-heart"></i>
+                <a href="">Wishlist</a>
+            </li>
+            <li>
+                <i class="far fa-shopping-cart"></i>
+                <a href="">Cart(3)</a>
+            </li>
+        </ul>
+    </div>
+
 </body>
+
 </html>
