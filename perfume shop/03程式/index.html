@@ -5,38 +5,236 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>香水電商</title>
-    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="css/all.css">
 </head>
 
 <body>
+
     <!-- .header>(img>a)+(ul>li*4>a) -->
-    <div class="header container">
-        <h1>
-            <a href="#">
+    <div class="header container display_flex_j_between">
+        <h1 class="p_tb-1">
+            <a href="index.html">
                 <img class="header_logo" src="../01素材/d’Perfume.png" alt="logo"></img>
             </a>
         </h1>
-        <ul class="display_flex_j_between">
-            <li>
-                <i class="fas fa-store-alt"></i>
-                <a href="">Product</a>
+        <ul class="display_flex_j_between p_tb-2">
+            <li class="m_r-4">
+                <a class="header_li_a" href="#">
+                    <i class="m_r-2 i_set fas fa-store-alt "></i>
+                    Product</a>
             </li>
-            <li>
-                <i class="fas fa-user"></i>
-                <a href="">log in</a>
+            <li class="m_r-4">
+                <a class="header_li_a" href="#">
+                    <i class="m_r-2 fas fa-user "></i>
+                    log in</a>
             </li>
-            <li>
-                <i class="fas fa-heart"></i>
-                <a href="">Wishlist</a>
+            <li class="m_r-4">
+                <a class="header_li_a" href="#">
+                    <i class="m_r-2 fas fa-heart "></i>
+                    Wishlist</a>
             </li>
-            <li>
-                <i class="far fa-shopping-cart"></i>
-                <a href="">Cart(3)</a>
+            <li class="m_r-4">
+                <a class="header_li_a" href="#">
+                    <i class="far fa-shopping-cart "></i>
+                    Cart(3)</a>
             </li>
         </ul>
     </div>
+    <!-- .banner>h2+p+(.btn>a) -->
+    <div class="banner">
+        <div class="banner_imgbox">
+        </div>
+        <div class="banner_textbox">
+            <h2 class="banner_textbox_h2 font_40_lh_60">Perfume your day</h2>
+            <p class="banner_textbox_p font_24_lh_36">A perfume is like a piece of clothing, a message, a way of presenting oneself a
+                costume that according to the person who wears it.</p>
+            <div class="banner_btn ">
+                <a class="banner_btn_a  " href="#">Shop now</a>
+            </div>
+        </div>
+    </div>
+    <!-- .content>(.cards_one>.container>img+(h2+p+.content_btn))+(.cards_two>img+(h2+p))+(.cards_three>.container>img+(h2+p+.content_btn)) -->
+    <div class="content p_tb-8 ">
+        <div class="cards_one m_b-7">
+            <div class="container">
+                <div class="card_img_right">
+                    <img class="card" src="../01素材/product01.jpg" alt="產品照片01">
+                    <div class="card_text card ">
+                        <div class="card_text_container">
+                            <h2 class="card_text_h2 font_32_lh_48">Gabrielle CHANEL</h2>
+                            <p class=" card_text_p font_24_lh_30">全新嗅覺體驗，花香四溢、明亮馥郁。結合茉莉、依蘭依蘭、橙花和最迷人的格拉斯晚香玉之花香，呈現出夢幻花香氣息。
+                                極具女性特質的香奈兒嘉柏麗香水，專為光芒四射的她而生。</p>
+                            <div class="content_btn m_t-2">
+                                <a class="card_text_a font_16_lh_24" href="#">查看更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_img_left">
+                    <img class="card" src="../01素材/product02.jpg" alt="產品照片02">
+                    <div class="card_text card ">
+                        <div class="card_text_container">
+                            <h2 class="card_text_h2 font_32_lh_48">Five O’clock Au Gingembre</h2>
+                            <p class="card_text_p font_24_lh_30">
+                                生薑與溫醇的肉桂香、紅糖的香甜摻和成一氣，溫暖微辛的氣息反倒形成一股輕煙氤氳開來，還帶點微微煙醺感漫溢在整個鼻息之間，細聞之下,又還有溫溫淡淡的木香，溫和而暖心。</p>
+                            <div class="content_btn m_t-2">
+                                <a class="card_text_a font_16_lh_24" href="#">查看更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_img_right">
+                    <img class="card" src="../01素材/product03.jpg" alt="產品照片03">
+                    <div class="card_text card ">
+                        <div class="card_text_container">
+                            <h2 class="card_text_h2 font_32_lh_48">CHANEL N°5</h2>
+                            <p class="card_text_p font_24_lh_30">N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
+                            <div class="content_btn m_t-2">
+                                <a class="card_text_a font_16_lh_24" href="chanle_product.html">查看更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_img_left">
+                    <img class="preventive" src="../01素材/product04.jpg" alt="產品照片04">
+                    <div class="card_text preventive ">
+                        <div class="card_text_container">
+                            <h2 class="preventive_text_h2 font_24_lh_36">
+                                <span> 1.</span>
+                                Levels of Preventive
+                                <span>
+                                    Maintenance Compliance
+                                </span>
+                            </h2>
+                            <p class="preventive_text_p font_16_lh_24 m_b-7">The core idea of preventative maintenance is the performance of
+                                proactive actions against unscheduled downtime in order to identify potential defects
+                                before they evolve into something more severe.</p>
+                            <h2 class="preventive_text_h2 font_24_lh_36">
+                                <span> 2.</span>
+                                Percentage of Planned
+                                <span>
+                                    Maintenance
+                                </span>
+                            </h2>
+                            <p class="preventive_text_p font_16_lh_24 m_b-7">The planned maintenance percentage is the total planned
+                                maintenance time in your CMMS software over a date range over the total number of hours
+                                of a service performed by the technicians.</p>
+                            <h2 class="preventive_text_h2 font_24_lh_36">
+                                <span> 3.</span>
+                                Critical percentage of
+                                <span>
+                                    planned maintenance
+                                </span>
+                            </h2>
+                            <p class="preventive_text_p font_16_lh_24m_b-7">Calculating the critical percentage of planned maintenance will
+                                help you prioritize the most important operations that should be performed immediately.
+                            </p>
+                            <div class="content_btn ">
+                                <a class="banner_btn_a " href="#">Plan a free online training</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards_two m_b-7 p_tb-5">
+            <div class="container">
+                <ul class="display_flex_j_between" >
+                    <li>
+                        <img class="card_two_img " src="../01素材/product05.jpg" alt="產品05">
+                        <h2 class="card_two_h2 font_24_lh_36">Poppy & Barley</h2>
+                        <p class="font_16_lh_24">Jo Malone</p>
+                        <p class="m_t-2 font_16_lh_24 ">NT$1,380
+                            <span class="card_two_span  font_16_lh_24 m_l-1">NT$1,580</span>
+                        </p>
+                    </li>
+                    <li>
+                        <img class="card_two_img " src="../01素材/product06.jpg" alt="產品06">
+                        <h2 class="card_two_h2 font_24_lh_36">Body Wash</h2>
+                        <p class="font_16_lh_24">Curology</p>
+                        <p class="m_t-2 font_16_lh_24 ">NT$1,580
+                        </p>
+                    </li>
+                    <li>
+                        <img class="card_two_img " src="../01素材/product07.jpg" alt="產品07">
+                        <div class="mark">
+                            <a class="mark_a font_24_lh_36" href="">Sold out</a>
+                        </div>
+                        <h2 class="card_two_h2font_24_lh_36">Apple Cider Vinegar Capsule</h2>
+                        <p class="font_16_lh_24">Tonik</p>
+                        <p class="m_t-2 font_16_lh_24 ">NT$1,580
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cards_three ">
+            <div class="container display_flex_j_between">
+                <img class="card_three_img" src="../01素材/product08.jpg" alt="
+                產品08">
+                <div class="card_three_text card_text_container font_20_lh_30
+                m_l-2">
+                    <h2 class="card_text_h2 font_32_lh_48">Bottle-Recycling</h2>
+                    <p class="font_20_lh_30" >Recycle your used empty bottles and be rewarded!</p>
+                    <p class="font_16_lh_24" >For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.</p>
+                    <div class="content_btn m_t-2">
+                        <a class="card_text_a font_16_lh_24" href="#">查看更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- .footer>(.footerbanner>(img+p+input))+(.footernav>img+p+(ul>li*3)) -->
+    <div class="footer">
+        <div class="footerbanner">
+            <div class="footer_banner_img"></div>
+            <div class="footer_textbox">
+                <p class="footer_textbox_p font_32_lh_48" >記得
+                    <span class="footer_textbox_span">
+                        訂閱以獲取更多資訊！
+                    </span>
+                </p>
+                <div class="input_boxs">
+                    <input class="input_box" type="text" value="Your email address">
+                    <div class="input_btn">
+                        <a class="input_btn_a font_16_lh_24 p_tb-2" href="">Subscribe</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_nav">
+            <div class="container display_flex_j_between ">
+                <div class="footer_logo_cc display_flex_j_between">
+                    <h1 class="p_tb-1">
+                        <a href="#">
+                            <img class="header_logo footer_nav_p" src="../01素材/d’Perfume@2x.png" alt="logo"></img>
+                        </a>
+                    </h1>
+                    <p class="footer_nav_cc">© 2020. All Rights Reserved.</p>
+                </div>
+                <ul class="display_flex_j_between p_tb-2 ">
+                    <li class="m_r-4">
+                        <a class="header_li_a footer_nav_p" href="#">
+                            Product</a>
+                    </li>
+                    <li class="m_r-4">
+                        <a class="header_li_a footer_nav_p" href="#">
+                            Blog</a>
+                    </li>
+                    <li class="m_r-4">
+                        <a class="header_li_a footer_nav_p" href="#">
+                           Content</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 

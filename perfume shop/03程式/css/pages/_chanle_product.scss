@@ -1,0 +1,127 @@
+.product_nav{
+    background-color: $mainColor;
+    .container{
+        @include container();
+        .product_nav_flex{
+            display:flex;
+            justify-content: flex-start;
+            li{
+                @include m_r-3();
+                 @include font_20_lh_30();
+                .p-1{
+                    @include p-1();
+                    display: block;
+                    font-family: $fontFamliy;
+                    color: $font_whilt;
+                }
+            }
+        }
+    }
+}
+.content{
+    @include p_t-10();
+    @include p_b-8();
+    .container{
+        @include container();
+        .product_information_card{
+            @include display_flex_j_between();
+            .card_imgs{
+                .img_one{
+                    .information_img_one{
+                        width: 760px;
+                        height: 460px;
+                    }
+                }
+                .img_two{
+                    @include display_flex_j_between();
+                    @include p_tb-4();
+                    .information_img_two{
+                        width: 350px;
+                        height: 640px;
+                    }
+                }
+            }
+            .card_content{
+                width: 350px;
+                @include m_l-2();
+                .card_content_h2{
+                    font-family: $fontFamliy;
+                    @include font_32_lh_48();
+                }
+                .chinese{
+                    @include chinese();
+                    @include font_20_lh_30();
+                }
+                .font_20_lh_30{
+                    @include font_20_lh_30();
+                    @include p_t-4();
+                    @include p_b-1();
+                }
+                .shop{
+                    display: flex;
+                    position: relative;
+                    @include p_b-1();
+                    .shop_input_box{
+                        padding-left: 8px;
+                        border: solid 1px $mainColor;
+                        width: 160px;
+                        font-size: $font_size_16;
+                        line-height: 22px;
+                    }
+                    .top_down{
+                        position: absolute;
+                        top:20%;
+                        right:55%;
+                        display: flex;
+                        flex-direction: column;
+                        .fas{
+                            color: #000;
+                        }
+                    }
+                    .shop_input_btn{
+                        background-color: $mainColor;
+                        font-size: $font_size_16;
+                        line-height: 22px;
+                        color: $font_whilt;
+                        .shop_input_btn_a{
+                            color: $font_whilt;
+                            display: block;
+                            @include p-2();
+                        }
+                    }
+                }
+                .heart{
+                    display: flex;
+                    .fas{
+                        color: $mainColor;
+                    }
+                }
+                h3{
+                    @include font_16_lh_24();
+                    @include p_b-1();
+                    @include p_t-10();
+                    }
+                .font_16_lh_24{
+                    @include font_16_lh_24;
+                    span {
+                        display: block;
+                    }
+                }
+                h3{
+                    @include font_16_lh_24();
+                    @include p_b-1();
+                    @include p_t-3();
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
