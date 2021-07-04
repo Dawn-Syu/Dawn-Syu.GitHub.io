@@ -1,0 +1,46 @@
+*, *::before, *::after{box-sizing:border-box;}
+
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+h3{
+    font-weight: bold;
+}
+h2{
+    font-weight: bold;
+}
+@mixin display_flex_j_between {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin font_20_lh_30{
+    font-size: $font_size_20;
+    line-height: 30px;
+}
+@mixin font_16_lh_24{
+    font-size: $font_size_16;
+    line-height: 24px;
+}
+@mixin font_24_lh_36{
+    font-size: $font_size_24;
+    line-height: 36px;
+}
+@mixin font_24_lh_30{
+    font-size: $font_size_24;
+    line-height: 30px;
+}
+@mixin font_32_lh_48{
+    font-size: $font_size_32;
+    line-height: 48px;
+}
+@mixin font_40_lh_60{
+    font-size: $font_size_40;
+    line-height: 60px;
+}
+@mixin container{
+    width: 1200px;
+    margin: 0 auto;
+    }

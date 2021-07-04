@@ -1,0 +1,208 @@
+@import 'utils/reset';
+@import 'utils/variable';
+@import 'utils/mixin';
+
+html{
+    font-family:$fontFamliy;
+}
+.container{
+    @include container;
+    h1{
+        color: #000;
+        font-size: 80px;
+        line-height: 106px;
+        @include p_t-4;
+        
+    }
+    .border{
+        @include m_t-1;
+        border: 2px solid #000;
+        width: 1200px;
+    }
+    .photo{
+        @include m_tb-6;
+        width: 324px;
+        height: 324px;
+    }
+    .profile {
+        h2{
+            @include font_32_lh_48;
+            span{
+                color: $secondaryColor;
+                @include font_24_lh_30;
+            }
+        }
+        .border_1{
+            border: 1px solid #000;
+            opacity: 0.3;
+            @include m_t-1;
+            @include m_b-2;
+        }
+         p{
+            @include font_24_lh_36;
+            @include m_b-3;
+            font-weight:bold;
+        }
+        @include m_b-9;
+    }
+    .education {
+        h2{
+            @include font_32_lh_48;
+            span{
+                color: $secondaryColor;
+                @include font_24_lh_30;
+            }
+        }
+        .border_1{
+            border: 1px solid #000;
+            opacity: 0.3;
+            @include m_t-1;
+            @include m_b-2;
+        }
+        li{
+            @include font_24_lh_36;
+            @include m_b-3;
+            font-weight: bold;
+        }
+        @include m_b-9;
+    }
+}
+.skills{
+    background-color:$thireColor;
+    @include p_t-3;
+    @include p_b-4;
+    .container{
+        @include container;
+
+        h2{
+            text-align: center;
+            color: $font_whilt;
+            @include font_32_lh_48;
+            span{
+                @include font_24_lh_30;
+                @include m_l-1;
+            }
+        }
+        .border_996{
+            margin: 0 auto;
+            color: $font_whilt;
+            width: 996px;
+            border: solid 1px #FFF;
+            text-align: center;
+            @include m_t-1;
+            @include m_b-3;
+            opacity: 0.7;
+        }
+        .skills_list{
+            opacity: 0.7;
+            @include p_l-3;
+            margin-left: 41%;
+            @include font_24_lh_36;
+            color: $font_whilt;
+            border-left: 1px solid #fff;
+        }
+    }
+}
+.container{
+    @include container;
+    .work_experience{
+        @include p_tb-8;
+        h2{
+        @include font_32_lh_48;
+        span{
+            color: $secondaryColor;
+            @include font_24_lh_30;
+            }
+        }
+        .border_1{
+            border: 1px solid #000;
+            opacity: 0.3;
+            @include m_t-1;
+            @include m_b-2;
+        }
+        .work_list{
+            @include m_l-3;
+            @include p_l-3;
+            .company_logo{
+                @include m_tb-1;
+                width: 94px;
+                height: 94px;
+            }
+            .work_title_p{
+                @include font_24_lh_36;
+                font-weight: bold;
+
+            }
+            .m_tb-3{
+                @include m_tb-3;
+            }
+            .work_p{
+                @include font_20_lh_30;
+                font-weight: bold;
+
+            }
+        }
+        .broder_left{
+            border-left: 1px solid #96A9C4;
+        } 
+    }
+}
+
+.about_me{
+    background-color:$thireColor;
+    @include p_t-3;
+    @include p_b-4;
+    .container{
+        @include container;
+        h2{
+            text-align: center;
+            color: $font_whilt;
+            @include font_32_lh_48;
+            span{
+                @include font_24_lh_30;
+                @include m_l-1;
+            }
+        }
+        .border_whilt{
+            opacity: 0.7;
+            width: 1200px;
+            border: 1px solid #fff;
+            @include m_t-1;
+            @include m_b-4;
+        }
+        .about_a{
+            opacity: 0.7;
+            @include font_24_lh_36;
+            color: #FFF;
+            text-align: center;
+            @include m_tb-2;
+            display: block;
+            &:hover{
+                background-color: greenyellow;
+                color: indianred;
+            }
+        }
+        .about_p{
+            opacity: 0.7;
+            @include font_24_lh_36;
+            color: #FFF;
+            text-align: center;
+            @include m_tb-2;
+            display: block;
+        }
+        .about_icons{
+            opacity: 0.7;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 48px;
+                height: 48px;
+                @include m_r-2;
+                &:hover{
+                    background-color: rgb(28, 243, 75);
+                }
+            }
+
+        }
+    }
+}

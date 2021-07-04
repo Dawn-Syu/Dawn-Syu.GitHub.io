@@ -1,0 +1,115 @@
+$mainColor:#000000;
+$secondaryColor:#A00404;
+$thireColor:#415165;
+$font_whilt:#FFF;
+$fontFamliy: 'Roboto' ,'思源黑體';
+$font_size_32:32px;
+$font_size_40:40px;
+$font_size_24:24px;
+$font_size_20:20px;
+$font_size_16:16px;
+$header_font_size:20px;
+
+
+@mixin p-1{
+    padding: 8px;
+}
+@mixin p-2{
+    padding: 16px;
+}
+@mixin p_t-3{
+padding-top: 24px;
+}
+@mixin p_l-3{
+    padding-left: 24px;
+}
+@mixin p_b-1{
+    padding-bottom: 8px;
+}
+@mixin p_t-10{
+    padding-top: 80px;
+}
+@mixin p_b-8{
+    padding-bottom: 64px;
+}
+@mixin p_t-4{
+    padding-top: 32px;
+}
+@mixin p_b-4{
+    padding-bottom: 32px;
+}
+@mixin p_tb-8{
+    padding: 64px 0;
+}
+@mixin p_tb-1{
+    padding: 8px 0;
+}
+@mixin p_tb-2{
+    padding: 16px 0;
+}
+@mixin p_tb-4{
+    padding: 32px 0;
+}
+@mixin p_tb-5{
+    padding: 40px 0;
+}
+@mixin m_tb-1{
+    margin: 8px 0;
+}
+@mixin m_tb-3{
+    margin: 24px 0;
+}
+@mixin m_tb-2{
+    margin: 16px 0;
+}
+@mixin m_tb-6{
+    margin: 48px 0;
+}
+@mixin m_b-1{
+    margin-bottom: 8px;
+}
+@mixin m_r-4{
+    margin-right: 32px;
+}
+@mixin m_r-3{
+    margin-right: 24px;
+}
+@mixin m_t-2{
+    margin-top: 16px;
+}
+@mixin m_t-3{
+    margin-top: 24px;
+}
+@mixin m_r-2{
+    margin-right: 16px;
+}
+@mixin m_r-1{
+    margin-right: 8px;
+}
+@mixin m_b-4{
+    margin-bottom: 32px;
+}
+@mixin m_b-7{
+    margin-bottom: 56px;
+}
+@mixin m_l-1{
+    margin-left: 8px;
+}
+@mixin m_l-2{
+    margin-left: 16px;
+}
+@mixin m_l-3{
+    margin-left: 24px;
+}
+@mixin m_t-1{
+   margin-top: 8px;
+}
+@mixin m_b-2{
+    margin-bottom: 16px;
+ }
+ @mixin m_b-3{
+    margin-bottom: 24px;
+ }
+ @mixin m_b-9{
+    margin-bottom: 72px;
+ }
