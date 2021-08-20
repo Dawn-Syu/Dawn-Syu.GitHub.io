@@ -69,7 +69,7 @@ p{
 }
 
 .banner{
-    background-image: url('/1.素材/banner.png');
+    background-image: url('../1.素材/banner.png');
     height: 958px;
     background-repeat: no-repeat;
     background-position: center;
