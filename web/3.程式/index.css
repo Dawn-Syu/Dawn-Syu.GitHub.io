@@ -1,0 +1,224 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Roboto';
+    font-style:italic;
+}
+
+h1{
+    font-size: 80px;
+    line-height: 106px;
+    font-weight: bolder;
+}
+h2{
+    font-size: 64px;
+    line-height: 84px;
+    font-weight: bolder;
+}
+h3{
+    font-size: 20px;
+    line-height: 42px;
+}
+h4{
+    font-size: 24px;
+    line-height: 42px;
+}
+p{
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.banner{
+    background-image: url('/1.素材/banner.png');
+    height: 958px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fontcolor_FFF{
+    color: #FFF;
+}
+.container{
+    width: 511px;
+    margin: 0 auto;
+}
+.pt_center{
+    padding-top: 17%;
+}
+.pt_7{
+    padding-top:56px;
+}
+.pt_8{
+    padding-top: 64px;
+}
+.pb_7{
+    padding-bottom: 56px;
+}
+.pb_8{
+    padding-bottom: 64px;
+}
+.pb_18{
+    padding-bottom: 114px;
+}
+.pb_20{
+    padding-bottom: 160px;
+}
+.mr_2{
+    margin-right: 16px;
+}
+.mr_3{
+    margin-right: 24px;
+}
+.ml_2{
+    margin-left: 16px;
+}
+.ml_3{
+    margin-left: 24px;
+}
+.mt_05{
+    margin-top: 4px;
+}
+.mt_2{
+    margin-top: 16px;
+}
+.mt_3{
+    margin-top: 24px;
+}
+.mt_4{
+    margin-top: 32px;
+}
+.mt_5{
+    margin-top: 40px;
+}
+.mt_6{
+    margin-top: 48px;
+}
+.mt_7{
+    margin-top: 56px;
+}
+.mt_8{
+    margin-top: 64px;
+}
+.mb_1{
+    margin-bottom: 8px;
+}
+.mb_2{
+    margin-bottom: 16px;
+}
+.mb_3{
+    margin-bottom: 24px;
+}
+.mb_4{
+    margin-bottom: 32px;
+}
+.mb_5{
+    margin-bottom: 40px;
+}
+.mb_8{
+    margin-bottom: 64px;
+}
+.font_normal{
+    font-style:normal;
+}
+.banner_text{
+    text-indent:5.7em;
+}
+.banner_text span{
+    display: block;
+}
+.icons{
+    display: flex;
+    justify-content:center;
+}
+
+.profile{
+    text-align: center;
+    font-weight: bolder;
+}
+.border{
+    width: 384px;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+}
+.skill_text{
+    display: flex;
+    justify-content:center;
+}
+.circle{
+    margin-top: 10px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #891818;
+    background-color: #891818;
+    border-radius: 50%;
+}
+.brand{
+    background-color: #000;
+}
+.brand_textbox{
+    text-align: center;
+}
+.photo_container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.brand_photos_photos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.work_content{
+    text-align: center;
+    font-weight: bolder;
+
+}
+.work_photo_cards{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: bolder;
+}
+.footer{
+    background-color: #000;
+    text-align: center;
+}
